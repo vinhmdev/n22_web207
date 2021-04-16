@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trang chủ</title>
+    <link rel="stylesheet" href="./css/bootstrap.css">
+    <link rel="stylesheet" href="./css/bootstrap-icons.css">
+    <script src="./js/bootstrap.js"></script>
+
+</head>
+<body ng-app="myApp" ng-controller="myCtrl">
+    <div class="container">
+        <header>
+            <img class="w-100" src="./img/banner.png" alt="banner">
+        </header>
+        <nav class="navbar navbar-light bg-light p-0 rounded border border-info border-top-0 shadow-sm">
+            <div class="nav-item">
+                <a href="#!trang-chu" class="nav-link alert alert-link bi bi-house-door-fill m-0 p-2">
+                    Trang chủ
+                </a>
+            </div>
+            <div class="nav-item">
+                <a href="#!gioi-thieu" class="nav-link alert alert-link m-0 p-2">
+                    Giới thiệu
+                </a>
+            </div>
+            <div class="nav-item">
+                <a href="#!lien-he" class="nav-link alert alert-link m-0 p-2">
+                    Liên Hệ
+                </a>
+            </div>
+            <div class="nav-item">
+                <a href="#!hoi-dap" class="nav-link alert alert-link m-0 p-2">
+                    Hỏi đáp
+                </a>
+            </div>
+            <div class="nav-item">
+                <a href="#!gop-y" class="nav-link alert alert-link m-0 p-2">
+                    Gớp ý
+                </a>
+            </div>
+
+            <div class="nav-item dropdown ms-auto position-relative">
+                <button id="dropdownMenu" type="button" class="dropdown-toggle nav-link alert alert-link m-0 p-2 text-primary bg-light" data-bs-toggle="dropdown">
+                    Tài khoản
+                </button>
+                <ul class="dropdown-menu position-absolute" aria-labelledby="dropdownMenu" style="right: 0; left: unset;">
+                    <li class="dropdown-item"><a class="d-block text-decoration-none" href="#!dang-ky">Đăng ký</a></li>
+                    <li class="dropdown-item"><a class="d-block text-decoration-none" href="#!dang-nhap">Đăng nhập</a></li>
+                    <li class="dropdown-item"><a class="d-block text-decoration-none" href="#!quen-mat-khau">Quên mật khẩu</a></li>
+                    <li><hr/></li>
+                    <li class="dropdown-item"><a class="d-block text-decoration-none" href="/">Đăng xuất</a></li>
+                    <li class="dropdown-item"><a class="d-block text-decoration-none" href="#!doi-mat-khau">Đổi mật khẩu</a></li>
+                    <li class="dropdown-item"><a class="d-block text-decoration-none" href="#!sua-tai-khoan">Cập nhật tài khoản</a></li>
+                </ul>
+            </div>
+        </nav>
+
+    </div>
+
+    <div class="container py-3">
+        <div class="row">
+            <!--  -->
+            <article class="col-9">
+                <div ng-view class="w-100 h-100"></div>
+            </article>
+            <!--  -->
+            <aside class="col-3">
+                <div class="card card-header p-0">
+                    <b class="bi bi-list-ul m-2 " role="button" data-bs-target="#ls1" data-bs-toggle="collapse">
+                        DANH MỤC
+                    </b>
+                    <div class="list-group collapse show" id="ls1">
+                        <a href="#" class="list-group-item">Kiểm thử và triển khai</a>
+                        <a href="#" class="list-group-item">SQL Server</a>
+                        <a href="#" class="list-group-item">Điện toán đám mây</a>
+                        <a href="#" class="list-group-item">Lập trình PHP</a>
+                        <a href="#" class="list-group-item">Lập trình android nâng cao</a>
+                        <a href="#" class="list-group-item">Lập trình android cơ bản</a>
+                        <a href="#" class="list-group-item">Thiết kế layout</a>
+                        <a href="#" class="list-group-item">Thiết kế giao diện android</a>
+                        <a href="#" class="list-group-item">Quản lý dự án angile</a>
+                        <a href="#" class="list-group-item">Internet makerting</a>
+                        <a href="#" class="list-group-item">Lập trình hướng đối tượng với java</a>
+                        <a href="#" class="list-group-item">Lập trình ASP.NET</a>
+                    </div>
+                </div>
+            </aside>
+            <!--  -->
+        </div>
+
+    </div>
+
+    <div class="container-fluid">
+        <footer class="row">
+            <div class="card card-footer text-center pt-4">
+                <p>FPT Polytechnic &copy; 2021. All rights reverved.</p>
+            </div>
+        </footer>
+    </div>
+
+    <script src="./js/angular.js"></script>
+    <script src="./js/angular-route.js"></script>
+    <script>
+        var app = angular.module('myApp', ['ngRoute']);
+        app.config($routeProvider => {
+            $routeProvider
+            .when('/trang-chu', {templateUrl : './mon-hoc.html'})
+            .when('/gioi-thieu', {templateUrl : './gioi-thieu.html'})
+            .when('/lien-he', {templateUrl : './lien-he.html'})
+            .when('/hoi-dap', {templateUrl : './hoi-dap.html'})
+            .when('/gop-y', {templateUrl : './gop-y.html'})
+            .when('/dang-ky', {templateUrl : './dang-ky.html'})
+            .when('/dang-nhap', {templateUrl : './dang-nhap.html'})
+            .when('/quen-mat-khau', {templateUrl : './quen-mat-khau.html'})
+            .when('/doi-mat-khau', {templateUrl : './doi-mat-khau.html'})
+            .when('/sua-tai-khoan', {templateUrl : './sua-tai-khoan.html'})
+            .otherwise({templateUrl: './mon-hoc.html'});
+        });
+
+        app.controller('myCtrl', $scope => {
+            // 404    
+        });
+    </script>
+</body>
+</html>
