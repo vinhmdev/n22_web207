@@ -97,37 +97,36 @@
   </style>
   </head>
 
-  <body ng-app="myApp" ng-controller="myCtrl" class="container login-block">
+  <body class="container login-block">
     <div class="mx-auto" style="width:30rem;">
       <div class="panel">
         <div class="login-sec">
           <h2 class="text-center">ĐĂNG NHẬP</h2>
-          <form class="login-form">
+          <div ng-show="mess" class="alert alert-danger fw-bold">
+            {{mess}}
+          </div>
+          <form name="loginForm" class="login-form">
             <div class="form-group">
               <label class="text-uppercase">Tài khoản</label>
-              <input type="text" class="form-control">
+              <input name="user" ng-model="user" type="text" class="form-control">
             </div>
             <div class="form-group mt-2">
               <label class="text-uppercase">Mật khẩu</label>
-              <input type="password" class="form-control">
+              <input name="pass" ng-model="pass" type="password" class="form-control">
             </div>
             <div class="form-check ps-0">
               <label class="form-check-label d-block mt-2">
-                <input type="checkbox" class="form-check-input ms-0 mt-1 me-1">
+                <input name="remember" ng-model="remember" type="checkbox" class="form-check-input ms-0 mt-1 me-1">
                 <div>Nhớ mật khẩu !</div>
               </label>
-              <button type="submit" class="btn btn-login float-right mt-2">Đăng
-                nhập</button>
+              <button ng-click="login()" type="button" class="btn btn-login float-right mt-2">
+                Đăng nhập
+              </button>
             </div>
           </form>
         </div>
       </div>
 
-      <script>
-        var app = angular.module('myApp', []);
-          app.controller('myCtrl', $scope => {
-        });
-      </script>
     </body>
 
   </html>

@@ -1,15 +1,23 @@
 <!DOCTYPE html>
-<html lang="vi">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Trang chủ</title>
+    <title>Online Training | Hệ thống học tập online của nhóm 22</title>
     <link rel="stylesheet" href="./css/bootstrap.css">
     <link rel="stylesheet" href="./css/bootstrap-icons.css">
     <script src="./js/bootstrap.js"></script>
+    <style>
+        .bg-main {
+            background: #fca0a0;
+            background-image: url('./img/bg-log.jpg');
+            /* background: -webkit-linear-gradient(to bottom, #8cb8ff, #6262de);
+            background: linear-gradient(to bottom, #ddc, #dd9); */
+        }
+    </style>
 
 </head>
-<body ng-app="myApp" ng-controller="myCtrl">
+<body ng-app="myApp" ng-controller="myCtrl" class="bg-main">
     <div class="container">
         <header>
             <img class="w-100" src="./img/banner.png" alt="banner">
@@ -21,38 +29,38 @@
                 </a>
             </div>
             <div class="nav-item">
-                <a href="#!gioi-thieu" class="nav-link alert alert-link m-0 p-2">
+                <a href="#!gioi-thieu" class="nav-link alert alert-link m-0 p-2 bi bi-people">
                     Giới thiệu
                 </a>
             </div>
             <div class="nav-item">
-                <a href="#!lien-he" class="nav-link alert alert-link m-0 p-2">
+                <a href="#!lien-he" class="nav-link alert alert-link m-0 p-2 bi bi-phone">
                     Liên Hệ
                 </a>
             </div>
             <div class="nav-item">
-                <a href="#!hoi-dap" class="nav-link alert alert-link m-0 p-2">
+                <a href="#!hoi-dap" class="nav-link alert alert-link m-0 p-2 bi bi-question-octagon">
                     Hỏi đáp
                 </a>
             </div>
             <div class="nav-item">
-                <a href="#!gop-y" class="nav-link alert alert-link m-0 p-2">
+                <a href="#!gop-y" class="nav-link alert alert-link m-0 p-2 bi bi-envelope">
                     Gớp ý
                 </a>
             </div>
 
             <div class="nav-item dropdown ms-auto position-relative">
-                <button id="dropdownMenu" type="button" class="dropdown-toggle nav-link alert alert-link m-0 p-2 text-primary bg-light" data-bs-toggle="dropdown">
+                <button id="dropdownMenu" type="button" class="dropdown-toggle nav-link alert alert-link m-0 p-2 text-primary bg-light bi bi-person" data-bs-toggle="dropdown">
                     Tài khoản
                 </button>
-                <ul class="dropdown-menu position-absolute" aria-labelledby="dropdownMenu" style="right: 0; left: unset;">
-                    <li class="dropdown-item"><a class="d-block text-decoration-none" href="#!dang-ky">Đăng ký</a></li>
-                    <li class="dropdown-item"><a class="d-block text-decoration-none" href="#!dang-nhap">Đăng nhập</a></li>
-                    <li class="dropdown-item"><a class="d-block text-decoration-none" href="#!quen-mat-khau">Quên mật khẩu</a></li>
-                    <li><hr/></li>
-                    <li class="dropdown-item"><a class="d-block text-decoration-none" href="/">Đăng xuất</a></li>
-                    <li class="dropdown-item"><a class="d-block text-decoration-none" href="#!doi-mat-khau">Đổi mật khẩu</a></li>
-                    <li class="dropdown-item"><a class="d-block text-decoration-none" href="#!sua-tai-khoan">Cập nhật tài khoản</a></li>
+                <ul class="dropdown-menu position-absolute" aria-labelledby="dropdownMenu" style="right: 0; left: unset; min-width: 14rem;">
+                    <li ng-hide="isLogin" class="dropdown-item"><a class="d-block text-decoration-none bi bi-pen" href="#!dang-ky"> Đăng ký</a></li>
+                    <li ng-hide="isLogin" class="dropdown-item"><a class="d-block text-decoration-none bi bi-box-arrow-in-right" href="#!dang-nhap"> Đăng nhập</a></li>
+                    <li ng-hide="isLogin" class="dropdown-item"><a class="d-block text-decoration-none bi bi-patch-question" href="#!quen-mat-khau"> Quên mật khẩu</a></li>
+                    <!-- <li><hr/></li> -->
+                    <li ng-show="isLogin" class="dropdown-item"><a class="d-block text-decoration-none bi bi-arrow-left-right" href="#!doi-mat-khau"> Đổi mật khẩu</a></li>
+                    <li ng-show="isLogin" class="dropdown-item"><a class="d-block text-decoration-none bi bi-file-person" href="#!sua-tai-khoan"> Cập nhật tài khoản</a></li>
+                    <li ng-show="isLogin" ng-click="logout()" class="dropdown-item"><a class="d-block text-decoration-none bi bi-box-arrow-left" href="#"> Đăng xuất</a></li>
                 </ul>
             </div>
         </nav>
@@ -67,23 +75,12 @@
             </article>
             <!--  -->
             <aside class="col-3">
-                <div class="card card-header p-0">
+                <div class="card card-header p-0 bg-light">
                     <b class="bi bi-list-ul m-2 " role="button" data-bs-target="#ls1" data-bs-toggle="collapse">
                         DANH MỤC
                     </b>
                     <div class="list-group collapse show" id="ls1">
-                        <a href="#" class="list-group-item">Kiểm thử và triển khai</a>
-                        <a href="#" class="list-group-item">SQL Server</a>
-                        <a href="#" class="list-group-item">Điện toán đám mây</a>
-                        <a href="#" class="list-group-item">Lập trình PHP</a>
-                        <a href="#" class="list-group-item">Lập trình android nâng cao</a>
-                        <a href="#" class="list-group-item">Lập trình android cơ bản</a>
-                        <a href="#" class="list-group-item">Thiết kế layout</a>
-                        <a href="#" class="list-group-item">Thiết kế giao diện android</a>
-                        <a href="#" class="list-group-item">Quản lý dự án angile</a>
-                        <a href="#" class="list-group-item">Internet makerting</a>
-                        <a href="#" class="list-group-item">Lập trình hướng đối tượng với java</a>
-                        <a href="#" class="list-group-item">Lập trình ASP.NET</a>
+                        <a ng-repeat="item in asideA" href="#" class="list-group-item">{{item.name}}</a>
                     </div>
                 </div>
             </aside>
@@ -92,7 +89,7 @@
 
     </div>
 
-    <div class="container-fluid">
+    <div class="container-fluid bg-white">
         <footer class="row">
             <div class="card card-footer text-center pt-4">
                 <p>FPT Polytechnic &copy; 2021. All rights reverved.</p>
@@ -111,17 +108,88 @@
             .when('/lien-he', {templateUrl : './lien-he.html'})
             .when('/hoi-dap', {templateUrl : './hoi-dap.html'})
             .when('/gop-y', {templateUrl : './gop-y.html'})
-            .when('/dang-ky', {templateUrl : './dang-ky.html'})
-            .when('/dang-nhap', {templateUrl : './dang-nhap.html'})
+            .when('/dang-ky', {
+                templateUrl : './dang-ky.html',
+                controller: 'sgUp'
+            })
+            .when('/dang-nhap', {
+                templateUrl : './dang-nhap.html',
+                controller: 'lgCtrl'
+            })
             .when('/quen-mat-khau', {templateUrl : './quen-mat-khau.html'})
             .when('/doi-mat-khau', {templateUrl : './doi-mat-khau.html'})
             .when('/sua-tai-khoan', {templateUrl : './sua-tai-khoan.html'})
             .otherwise({templateUrl: './mon-hoc.html'});
         });
 
-        app.controller('myCtrl', $scope => {
-            // 404    
+        app.controller('myCtrl', ($scope, $http) => {
+            //Kiểm tra đăng nhập hay chưa
+            document.cookie.split('; ').filter(item => {
+                if (item.startsWith('LoginId')){
+                    $scope.isLogin = (item.substring(item.indexOf('=') + 1));
+                    return true;
+                }
+                return false;
+            });
+            
+            $scope.logout = function () {
+                document.cookie = 'LoginId=null;expires=' + new Date(0) + ';path=/';
+                document.cookie = 'User=null;expires=' + new Date(0) + ';path=/';
+                document.cookie = 'Pass=null;expires=' + new Date(0) + ';path=/';
+                document.location = '/';
+            }
+
+            $http.get('http://localhost:3000/subjects').then(
+                response => {
+                    $scope.asideA = response.data;
+                },
+                error => {
+
+                }
+            )
         });
+
+        app.controller('sgUp', function ($scope, $http) {
+            $scope.account = {
+                username: '',
+                password: '',
+                email: '',
+                fullname: '',
+                birthday: '',
+                gender: '',
+                schoolfee: 0,
+                marks: 0
+            };
+
+            {
+    }
+
+            $scope.signUp = function () {
+                var error = false;
+                $http.get('http://localhost:3000/user?username='+$scope.account.username)
+                .then(
+                    response => {
+                        if (response.data.length == 0) {
+                            $scope.mess = 'Tài khoản đã tồn tại';
+                            error = true;
+                        }
+                    },
+                    error => {
+                        $scope.mess = 'Không thể kết nối đến cơ sỡ dữ liệu';
+                        error = true;
+                    }
+                );
+                if (error) {
+                    return;
+                }
+                $scope.account.birthday = $scope.account.birthday.toLocaleDateString('vi-VN');
+                $scope.account.gender = ($scope.account.gender == 'true') ? true : false;
+                $http.post('http://localhost:3000/user', $scope.account);
+                
+            }
+        });
+
     </script>
+    <script src="./js/module/dang-nhap.js"></script>
 </body>
 </html>
