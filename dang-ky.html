@@ -97,47 +97,55 @@
 </head>
 
 <body class="container login-block">
-  <div class="mx-auto" style="width:30rem;">
+  <div class="mx-auto" style="max-width:30rem;">
     <div class="panel">
       <div class="login-sec">
         <h2 class="text-center">ĐĂNG KÝ</h2>
-        <form class="login-form">
+        <form name="sgUpForm" class="login-form">
           <div class="form-group">
             <label class="text-uppercase">Tài khoản</label>
-            <input ng-model="account.username" type="text" class="form-control">
+            <input name="username" ng-model="account.username" type="text" class="form-control" required>
+            <div ng-show="sgUpForm.username.$invalid" class="form-text text-danger my-0">Tài khoản không hợp lệ</div>
+            <div ng-show="er.username" class="form-text text-danger my-0">{{er.username}}</div>
           </div>
           <div class="form-group mt-2">
             <label class="text-uppercase">Mật khẩu</label>
-            <input ng-model="account.password" type="password" class="form-control">
+            <input name="password" ng-model="account.password" type="password" class="form-control" required>
+            <div ng-show="sgUpForm.password.$invalid" class="form-text text-danger my-0">Mật khẩu không hợp lệ</div>
           </div>
           <div class="form-group mt-2">
             <label class="text-uppercase">Email</label>
-            <input ng-model="account.email" type="email" class="form-control">
+            <input name="email" ng-model="account.email" type="email" class="form-control" required>
+            <div ng-show="sgUpForm.email.$invalid" class="form-text text-danger my-0">Email không hợp lệ</div>
           </div>
           <div class="form-group mt-2">
             <label class="text-uppercase">Họ và tên</label>
-            <input ng-model="account.fullname" type="text" class="form-control">
+            <input name="fullname" ng-model="account.fullname" type="text" class="form-control" required>
+            <div ng-show="sgUpForm.fullname.$invalid" class="form-text text-danger my-0">Họ và tên không hợp lệ</div>
           </div>
           <div class="form-group mt-2">
             <label class="text-uppercase">Sinh nhật</label>
-            <input ng-model="account.birthday" type="date" class="form-control">
+            <input name="birthday" ng-model="account.birthday" type="date" class="form-control" required>
+            <div ng-show="sgUpForm.birthday.$invalid" class="form-text text-danger my-0">Ngày sinh không hợp lệ</div>
           </div>
           <div class="form-group mt-2">
             <label class="text-uppercase">Giới tính</label>
             <br>
             <div class="border p-2 rounded-2">
               <label class="d-inline-block me-3">
-                <input ng-model="account.gender" value="true" name="gender" type="radio" class="form-check float-start me-2">
+                <input ng-model="account.gender" value="true" name="gender" type="radio" class="form-check float-start me-2" required>
                 <span>Nam</span>
               </label>
               <label class="d-inline-block">
-                <input ng-model="account.gender" value="false" name="gender" type="radio" class="form-check float-start me-2">
+                <input ng-model="account.gender" value="false" name="gender" type="radio" class="form-check float-start me-2" required>
                 <span>Nữ</span>
               </label>
             </div>
+            <div ng-show="sgUpForm.gender.$invalid" class="form-text text-danger my-0">Giới tính không hợp lệ</div>
           </div>
           <div class="form-check ps-0 mt-2">
-            <button ng-click="signUp()" type="button" class="btn btn-login float-right mt-2">Đăng ký</button>
+            <button ng-hide="sgUpForm.$valid" onclick="alert('Vui lòng kiểm tra lại lỗi trên form')" type="button" class="btn btn-login float-right mt-2">Đăng ký</button>
+            <button ng-show="sgUpForm.$valid" ng-click="signUp()" type="button" class="btn btn-login float-right mt-2">Đăng ký</button>
           </div>
         </form>
       </div>

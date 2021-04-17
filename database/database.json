@@ -32,6 +32,17 @@
       "birthday": "2001-01-10",
       "schoolfee": 2000000,
       "marks": 0
+    },
+    {
+      "username": "vinhlmd",
+      "password": "1234",
+      "email": "mvinhle22@gmail.com",
+      "fullname": "22 Vinh",
+      "birthday": "2001/12/22",
+      "gender": true,
+      "schoolfee": 0,
+      "marks": 0,
+      "id": 4
     }
   ],
   "subjects": [

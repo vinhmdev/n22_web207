@@ -144,52 +144,12 @@
                     $scope.asideA = response.data;
                 },
                 error => {
-
+                    alert('Không thể kết nối đến cơ sỡ dữ liệu');
                 }
             )
         });
-
-        app.controller('sgUp', function ($scope, $http) {
-            $scope.account = {
-                username: '',
-                password: '',
-                email: '',
-                fullname: '',
-                birthday: '',
-                gender: '',
-                schoolfee: 0,
-                marks: 0
-            };
-
-            {
-    }
-
-            $scope.signUp = function () {
-                var error = false;
-                $http.get('http://localhost:3000/user?username='+$scope.account.username)
-                .then(
-                    response => {
-                        if (response.data.length == 0) {
-                            $scope.mess = 'Tài khoản đã tồn tại';
-                            error = true;
-                        }
-                    },
-                    error => {
-                        $scope.mess = 'Không thể kết nối đến cơ sỡ dữ liệu';
-                        error = true;
-                    }
-                );
-                if (error) {
-                    return;
-                }
-                $scope.account.birthday = $scope.account.birthday.toLocaleDateString('vi-VN');
-                $scope.account.gender = ($scope.account.gender == 'true') ? true : false;
-                $http.post('http://localhost:3000/user', $scope.account);
-                
-            }
-        });
-
     </script>
     <script src="./js/module/dang-nhap.js"></script>
+    <script src="./js/module/dang-ky.js"></script>
 </body>
 </html>
