@@ -1,15 +1,12 @@
 app.controller('lgCtrl', function ($scope, $routeParams, $http) {
     // hiện thông tin nhớ tài khoản
-    document.cookie.split('; ').filter(item => {
+    document.cookie.split('; ').forEach(item => {
         if (item.startsWith('User')){
             $scope.user = item.substring(item.indexOf('=') + 1);
-            return true;
         }
         if (item.startsWith('Pass')){
-            $scope.pass = item.substring(item.indexOf('='));
-            return true;
+            $scope.pass = item.substring(item.indexOf('=') + 1);
         }
-        return false;
     });
 
     // giá trị thông báo mặc định
@@ -32,7 +29,7 @@ app.controller('lgCtrl', function ($scope, $routeParams, $http) {
                 var age = new Date();
                 age.setTime(age.getTime() + (1000 * 60 * 60 * 24));
                 document.cookie = 'LoginId=' + dataResponse[0].id + ';expires=' + age + ';path=/';
-
+                document.cookie = 'Username=' + dataResponse[0].username + ';expires=' + age + ';path=/';
                 if ($scope.remember) {
                     document.cookie = 'User=' + dataResponse[0].username + ';expires=' + age + ';path=/';
                     document.cookie = 'Pass=' + dataResponse[0].password + ';expires=' + age + ';path=/';

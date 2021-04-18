@@ -1,0 +1,54 @@
+<div class="card" ng-init="page=0">
+    <div class="card card-header text-primary">
+        <b class="bi bi-bookmark-check-fill">
+            Kết quả học tập
+        </b>
+    </div>
+    <div class="card card-body rounded-0">
+        <div class="alert alert-info mb-3">
+            <ul class="list-group list-group-flush">
+                <li class="list-group-item"><b>Môn học:</b> {{infes[page].nameSubject}}</li>
+                <li class="list-group-item"><b>Ngày kiểm tra:</b> {{infes[page].start | date : 'dd/MM/yyyy HH:mm:ss'}}</li>
+                <li class="list-group-item"><b>Câu hỏi đã trả lời:</b> {{histoShow[page].length}}</li>
+                <li class="list-group-item"><b>Thời gian:</b> {{infes[page].detalTime | number : '3'}} giây</li>
+            </ul>
+        </div>
+        <table class="table table-bordered table-hover w-100">
+            <thead>
+                <tr>
+                    <th>ID câu hỏi</th>
+                    <th>Câu hỏi</th>
+                    <th>Câu trả lời của bạn</th>
+                    <th>Trạng thái</th>
+                    <th>Ghi chú</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr ng-repeat="item in histoShow[page]">
+                    <td ng-show="item.status">{{item.id}}</td>
+                    <td ng-show="item.status">{{item.quest}}</td>
+                    <td ng-show="item.status">{{item.myAnswer}}</td>
+                    <td ng-show="item.status"><span class="bi bi-brightness-high">{{item.status ? 'Pass' : 'Fail'}}</span></td>
+                    <td ng-show="item.status">{{item.note}}</td>
+
+                    <td class="bg-light" ng-hide="item.status">{{item.id}}</td>
+                    <td class="bg-light" ng-hide="item.status">{{item.quest}}</td>
+                    <td class="bg-light" ng-hide="item.status">{{item.myAnswer}}</td>
+                    <td class="bg-light" ng-hide="item.status"><span class="bi bi-cloud-lightning-rain"> {{item.status ? 'Pass' : 'Fail'}}</span></td>
+                    <td class="bg-light" ng-hide="item.status">{{item.note}}</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <div class="card card-footer bg-white">
+        <div class="pagination justify-content-center border border-info rounded p-2 mt-2 bg-light">
+            <button ng-click="page = page <= 0 ? 0 : page - 1" class="page-link border mx-2 bi bi-arrow-left-circle-fill" type="button"></button>
+            <div class="page-link border mx-2 text-center">
+                <div class="input-group">
+                    <b>{{page + 1}} / {{lengthPage}}</b>
+                </div>
+            </div>
+            <button ng-click="page = page >= (lengthPage - 1) ? (lengthPage - 1) : (page + 1)" class="page-link border mx-2 bi-arrow-right-circle-fill" type="button"></button>
+        </div>
+    </div>
+</div>

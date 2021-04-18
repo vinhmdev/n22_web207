@@ -32,17 +32,6 @@
       "birthday": "2001-01-10",
       "schoolfee": 2000000,
       "marks": 0
-    },
-    {
-      "username": "vinhlmd",
-      "password": "1234",
-      "email": "mvinhle22@gmail.com",
-      "fullname": "22 Vinh",
-      "birthday": "2001/12/22",
-      "gender": true,
-      "schoolfee": 0,
-      "marks": 0,
-      "id": 4
     }
   ],
   "subjects": [
@@ -34155,30 +34144,551 @@
       ]
     }
   ],
-  "temp": [
+  "histo": [
     {
-      "id": 25106,
-      "text": "Có mấy loại Service?",
-      "marks": 1,
-      "answer_id": 104121,
-      "answers": [
+      "id": 0
+    },
+    {
+      "idUser": "1",
+      "idSubject": "adav",
+      "histo": [
         {
-          "id": 104118,
-          "text": "3"
+          "id": 25106,
+          "text": "Có mấy loại Service?",
+          "marks": 1,
+          "answer_id": 104121,
+          "answers": [
+            {
+              "id": 104118,
+              "text": "3"
+            },
+            {
+              "id": 104119,
+              "text": "4"
+            },
+            {
+              "id": 104120,
+              "text": "1"
+            },
+            {
+              "id": 104121,
+              "text": "2"
+            }
+          ],
+          "pick_answer_id": 104118
         },
         {
-          "id": 104119,
-          "text": "4"
+          "id": 25107,
+          "text": "Trong IntentService, phương thức onHandlerIntent sẽ được tự động gọi trong phương thức nào?",
+          "marks": 1,
+          "answer_id": 104124,
+          "answers": [
+            {
+              "id": 104122,
+              "text": "onServiceConnected()"
+            },
+            {
+              "id": 104123,
+              "text": "onServiceDisConnected()"
+            },
+            {
+              "id": 104124,
+              "text": "onStartCommand()"
+            },
+            {
+              "id": 104125,
+              "text": "onBind()"
+            }
+          ],
+          "pick_answer_id": 104124
         },
         {
-          "id": 104120,
-          "text": "1"
+          "id": 25108,
+          "text": "Khi nào phương thức ServiceConnection.onServiceConnected được gọi?",
+          "marks": 1,
+          "answer_id": 104126,
+          "answers": [
+            {
+              "id": 104126,
+              "text": "Sau khi một thành phần gọi Context.startService()"
+            },
+            {
+              "id": 104127,
+              "text": "Sau khi một thành phần gọi Context.bindService()"
+            },
+            {
+              "id": 104128,
+              "text": "Sau khi BroadcastReceiver nhận một Intent được gửi bởi Service"
+            },
+            {
+              "id": 104129,
+              "text": "Khi một Service gọi Context.startActivity()"
+            }
+          ],
+          "pick_answer_id": 104126
         },
         {
-          "id": 104121,
-          "text": "2"
+          "id": 25109,
+          "text": "Phương thức Service.stopSelf(int startId) có tham số kiểu int. Tham số này dùng để làm gì?",
+          "marks": 1,
+          "answer_id": 104132,
+          "answers": [
+            {
+              "id": 104130,
+              "text": "Nếu startId khác 0, Service sẽ bị hủy một cách vô điều kiện"
+            },
+            {
+              "id": 104131,
+              "text": "Tham số miêu tả số miliseconds bị trì hoãn trước khi Service bị hủy"
+            },
+            {
+              "id": 104132,
+              "text": "Là start identifier gần nhất nhận được bởi lời gọi onStart(Intent, int)"
+            },
+            {
+              "id": 104133,
+              "text": "Được sử dụng để dừng Service nếu Service đang chạy trong process id với process id bằng giá trị startid"
+            }
+          ],
+          "pick_answer_id": 104131
         }
-      ]
+      ],
+      "start": "2021-04-18T16:33:42.192Z",
+      "end": "2021-04-18T16:33:54.790Z",
+      "id": 1
+    },
+    {
+      "idUser": "1",
+      "idSubject": "adte",
+      "histo": [
+        {
+          "id": 25262,
+          "text": "Kiểm thử nào không nằm trong kiểm thử hệ thống?",
+          "marks": 1,
+          "answer_id": 104715,
+          "answers": [
+            {
+              "id": 104712,
+              "text": "Installation tests"
+            },
+            {
+              "id": 104713,
+              "text": "Performance tests"
+            },
+            {
+              "id": 104714,
+              "text": "GUI tests"
+            },
+            {
+              "id": 104715,
+              "text": "Unit test"
+            }
+          ],
+          "pick_answer_id": 104713
+        },
+        {
+          "id": 25263,
+          "text": "Kiểm thử nào được sử dụng để kiểm thử hoạt động của các thành phần khi chúng làm việc chung với nhau?",
+          "marks": 1,
+          "answer_id": 104717,
+          "answers": [
+            {
+              "id": 104716,
+              "text": "Kiểm thử đơn vị"
+            },
+            {
+              "id": 104717,
+              "text": "Kiểm thử tích hợp"
+            },
+            {
+              "id": 104718,
+              "text": "Kiểm thử chấp nhận"
+            },
+            {
+              "id": 104719,
+              "text": "Kiểm thử giao diện"
+            }
+          ],
+          "pick_answer_id": 104719
+        },
+        {
+          "id": 25264,
+          "text": "Android sử dụng Framework nào để kiểm thử đơn vị?",
+          "marks": 1,
+          "answer_id": 104720,
+          "answers": [
+            {
+              "id": 104720,
+              "text": "JUnit"
+            },
+            {
+              "id": 104721,
+              "text": "FUnit"
+            },
+            {
+              "id": 104722,
+              "text": "NUnit"
+            },
+            {
+              "id": 104723,
+              "text": "AUnit"
+            }
+          ],
+          "pick_answer_id": 104722
+        },
+        {
+          "id": 25265,
+          "text": "Trong JUnit, phương thức nào được sử dụng để kiểm tra một giá trị có phải Null hay không?",
+          "marks": 1,
+          "answer_id": 104727,
+          "answers": [
+            {
+              "id": 104724,
+              "text": "confirmNull"
+            },
+            {
+              "id": 104725,
+              "text": "assertNulls"
+            },
+            {
+              "id": 104726,
+              "text": "confirmNulls"
+            },
+            {
+              "id": 104727,
+              "text": "assertNull"
+            }
+          ],
+          "pick_answer_id": 104724
+        }
+      ],
+      "start": "2021-04-18T16:46:33.954Z",
+      "end": "2021-04-18T16:46:41.420Z",
+      "id": 2
+    },
+    {
+      "idUser": "1",
+      "idSubject": "adav",
+      "histo": [
+        {
+          "id": 25106,
+          "text": "Có mấy loại Service?",
+          "marks": 1,
+          "answer_id": 104121,
+          "answers": [
+            {
+              "id": 104118,
+              "text": "3"
+            },
+            {
+              "id": 104119,
+              "text": "4"
+            },
+            {
+              "id": 104120,
+              "text": "1"
+            },
+            {
+              "id": 104121,
+              "text": "2"
+            }
+          ],
+          "pick_answer_id": 104120
+        }
+      ],
+      "start": "2021-04-18T16:46:53.800Z",
+      "end": "2021-04-18T16:46:56.161Z",
+      "id": 3
+    },
+    {
+      "idUser": "1",
+      "idSubject": "jaav",
+      "histo": [
+        {
+          "id": 26120,
+          "text": "Package nào chứa các class kiểu dữ liệu",
+          "marks": 1,
+          "answer_id": 108224,
+          "answers": [
+            {
+              "id": 108224,
+              "text": "java.lang"
+            },
+            {
+              "id": 108225,
+              "text": "java.io"
+            },
+            {
+              "id": 108226,
+              "text": "java.ouput"
+            },
+            {
+              "id": 108227,
+              "text": "java.swing"
+            },
+            {
+              "id": 108228,
+              "text": "java.util"
+            },
+            {
+              "id": 108229,
+              "text": "java.input"
+            }
+          ],
+          "pick_answer_id": 108225
+        },
+        {
+          "id": 26121,
+          "text": "Trong file MyCode.java chứa đoạn code sau: public class MyClass{}public interface MyInterface{}Mô tả nào đúng với đoạn code này trong file MyCode?",
+          "marks": 1,
+          "answer_id": 108230,
+          "answers": [
+            {
+              "id": 108230,
+              "text": "Đoạn code trên không có phương thức main()"
+            },
+            {
+              "id": 108231,
+              "text": "MyClass phải kế thừa từ MyInterface"
+            },
+            {
+              "id": 108232,
+              "text": "Không thể có một public class hoặc interface có cùng tên trong file code Java này."
+            },
+            {
+              "id": 108233,
+              "text": "MyClass phải thực thi MyInterface"
+            },
+            {
+              "id": 108234,
+              "text": "Phải có một public class hoặc interface có tên là MyCode"
+            },
+            {
+              "id": 108235,
+              "text": "Phải có nhiều public class hoặc interface có tên là MyCode"
+            }
+          ],
+          "pick_answer_id": 108234
+        },
+        {
+          "id": 26122,
+          "text": "Trong Java, 5/2 có kết quả là:",
+          "marks": 1,
+          "answer_id": 108240,
+          "answers": [
+            {
+              "id": 108236,
+              "text": "0"
+            },
+            {
+              "id": 108237,
+              "text": "Có lỗi"
+            },
+            {
+              "id": 108238,
+              "text": "3"
+            },
+            {
+              "id": 108239,
+              "text": "2.5"
+            },
+            {
+              "id": 108240,
+              "text": "2"
+            }
+          ],
+          "pick_answer_id": 108240
+        },
+        {
+          "id": 26123,
+          "text": "Trong một package, đối với một thành phần (member) khi không khai báo từ khóa private, public, protected thì quyền truy cập đối với thành phần đó là",
+          "marks": 1,
+          "answer_id": 108244,
+          "answers": [
+            {
+              "id": 108241,
+              "text": "Có thể truy cập bởi các class bên ngoài package."
+            },
+            {
+              "id": 108242,
+              "text": "Chỉ có thể truy cập trong cùng một class."
+            },
+            {
+              "id": 108243,
+              "text": "Có thể truy cập bởi các class kế thừa từ class này."
+            },
+            {
+              "id": 108244,
+              "text": "Có thể truy cập bởi các class trong cùng một package."
+            },
+            {
+              "id": 108245,
+              "text": "Có thể truy cập bởi các class là super của class này."
+            }
+          ],
+          "pick_answer_id": 108244
+        },
+        {
+          "id": 26124,
+          "text": "Chọn câu trả lời đúng:interface chứa các method là",
+          "marks": 1,
+          "answer_id": 108248,
+          "answers": [
+            {
+              "id": 108246,
+              "text": "Các method là final"
+            },
+            {
+              "id": 108247,
+              "text": "Các method protected"
+            },
+            {
+              "id": 108248,
+              "text": "Tất cả các method abstract"
+            },
+            {
+              "id": 108249,
+              "text": "Các method là public"
+            },
+            {
+              "id": 108250,
+              "text": "Các method là private"
+            },
+            {
+              "id": 108251,
+              "text": "Một số method là abstract"
+            }
+          ],
+          "pick_answer_id": 108249
+        },
+        {
+          "id": 26125,
+          "text": "Đoạn code này có lỗi không?import java.util.*;package myPackage;class MyClass extends MyInterface {} interface MyInterface {}",
+          "marks": 1,
+          "answer_id": 108256,
+          "answers": [
+            {
+              "id": 108252,
+              "text": "Interface MyInterface có thể kế thừa"
+            },
+            {
+              "id": 108253,
+              "text": "Không có lỗi"
+            },
+            {
+              "id": 108254,
+              "text": "Dòng import.java.util.* sai cú pháp"
+            },
+            {
+              "id": 108255,
+              "text": "class MyClass phải được khai báo là public"
+            },
+            {
+              "id": 108256,
+              "text": "Interface MyInterface không thể kế thừa"
+            }
+          ],
+          "pick_answer_id": 108256
+        },
+        {
+          "id": 26126,
+          "text": "Package nào được dùng để trình bày giao diện đồ họa?",
+          "marks": 1,
+          "answer_id": 108262,
+          "answers": [
+            {
+              "id": 108257,
+              "text": "java.ouput"
+            },
+            {
+              "id": 108258,
+              "text": "java.io"
+            },
+            {
+              "id": 108259,
+              "text": "java.util"
+            },
+            {
+              "id": 108260,
+              "text": "java.lang"
+            },
+            {
+              "id": 108261,
+              "text": "java.input"
+            },
+            {
+              "id": 108262,
+              "text": "java.swing"
+            }
+          ],
+          "pick_answer_id": 108262
+        },
+        {
+          "id": 26127,
+          "text": "Trong Java, chỉ số của mảng bắt đầu là",
+          "marks": 1,
+          "answer_id": 108265,
+          "answers": [
+            {
+              "id": 108263,
+              "text": "2"
+            },
+            {
+              "id": 108264,
+              "text": "tùy ý"
+            },
+            {
+              "id": 108265,
+              "text": "0"
+            },
+            {
+              "id": 108266,
+              "text": "-1"
+            },
+            {
+              "id": 108267,
+              "text": "1"
+            }
+          ],
+          "pick_answer_id": 108265
+        },
+        {
+          "id": 26128,
+          "text": "Chọn câu trả lời đúng:Class abstract là",
+          "marks": 1,
+          "answer_id": 108270,
+          "answers": [
+            {
+              "id": 108268,
+              "text": "Class chứa các phương thức được khai báo là public"
+            },
+            {
+              "id": 108269,
+              "text": "Class chứa các phương thức được khai báo là private"
+            },
+            {
+              "id": 108270,
+              "text": "Class chứa ít nhất một phương thức được khai báo là abstract"
+            },
+            {
+              "id": 108271,
+              "text": "Class chứa các phương thức được khai báo là abtract"
+            },
+            {
+              "id": 108272,
+              "text": "Class chứa các phương thức được khai báo là final"
+            },
+            {
+              "id": 108273,
+              "text": "Class chứa các phương thức được khai báo là protected"
+            }
+          ],
+          "pick_answer_id": 108269
+        }
+      ],
+      "start": "2021-04-18T16:53:09.575Z",
+      "end": "2021-04-18T16:54:33.347Z",
+      "id": 4
     }
   ],
   "vbpr": [

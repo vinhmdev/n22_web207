@@ -1,139 +1,63 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Trang chủ</title>
-    <link rel="stylesheet" href="./css/bootstrap.css">
-    <link rel="stylesheet" href="./css/bootstrap-icons.css">
-    <script src="./js/bootstrap.js"></script>
-</head>
-<body>
-    <div class="container">
-        <header>
-            <img class="w-100" src="./img/banner.png" alt="banner">
-        </header>
-        <nav class="navbar navbar-light bg-light p-0 rounded border border-info border-top-0 shadow-sm">
-            <div class="nav-item">
-                <a href="/" class="nav-link alert alert-link bi bi-house-door-fill m-0 p-2">
-                    Trang chủ
-                </a>
-            </div>
-            <div class="nav-item">
-                <a href="/gioi-thieu.html" class="nav-link alert alert-link m-0 p-2">
-                    Giới thiệu
-                </a>
-            </div>
-            <div class="nav-item">
-                <a href="/lien-he.html" class="nav-link alert alert-link m-0 p-2">
-                    Liên Hệ
-                </a>
-            </div>
-            <div class="nav-item">
-                <a href="/hoi-dap.html" class="nav-link alert alert-link m-0 p-2">
-                    Hỏi đáp
-                </a>
-            </div>
-            <div class="nav-item">
-                <a href="/gop-y.html" class="nav-link alert alert-link m-0 p-2">
-                    Gớp ý
-                </a>
-            </div>
-
-            <div class="nav-item dropdown ms-auto position-relative">
-                <button id="dropdownMenu" type="button" class="dropdown-toggle nav-link alert alert-link m-0 p-2 text-primary bg-light" data-bs-toggle="dropdown">
-                    Tài khoản
-                </button>
-                <ul class="dropdown-menu position-absolute" aria-labelledby="dropdownMenu" style="right: 0; left: unset;">
-                    <li class="dropdown-item"><a class="d-block text-decoration-none" href="/dang-ky.html">Đăng ký</a></li>
-                    <li class="dropdown-item"><a class="d-block text-decoration-none" href="/dang-nhap.html">Đăng nhập</a></li>
-                    <li class="dropdown-item"><a class="d-block text-decoration-none" href="/quen-mat-khau.html">Quên mật khẩu</a></li>
-                    <li><hr/></li>
-                    <li class="dropdown-item"><a class="d-block text-decoration-none" href="/">Đăng xuất</a></li>
-                    <li class="dropdown-item"><a class="d-block text-decoration-none" href="/doi-mat-khau.html">Đổi mật khẩu</a></li>
-                    <li class="dropdown-item"><a class="d-block text-decoration-none" href="/sua-tai-khoan.html">Cập nhật tài khoản</a></li>
-                </ul>
-            </div>
-        </nav>
-
+<div class="card">
+    <div class="card card-header text-primary">
+        <b class="bi bi-book-half">
+            {{title}}
+        </b>
     </div>
-
-    <div class="container py-3">
-        <div class="row">
-            <!--  -->
-            <article class="col-9">
-                <div class="card">
-                    <b class="card card-header">
-                        <div class="bi bi-list-ul">
-                            XÂY DỰNG TRANG WEB
-                        </div>
-                    </b>
-                    <div class="card card-body rounded-0">
-                        1. Trong kỹ thuật chỉnh nâng cao có những kỹ thuật nào ?
-                        <hr class="my-3">
-                        <div class="">
-                            <label class="d-block bg-light rounded border border-info mb-2 mt-1 p-1">
-                                <input type="radio" name="result"/>
-                                Đối xứng
-                            </label>
-                            <label class="d-block bg-light rounded border border-info mb-2 p-1">
-                                <input type="radio" name="result"/>
-                                Bẻ văn bản
-                            </label>
-                            <label class="d-block bg-light rounded border border-info mb-2 p-1">
-                                <input type="radio" name="result"/>
-                                Khối văn bản
-                            </label>
-                            <label class="d-block bg-light rounded border border-info mb-2 p-1">
-                                <input type="radio" name="result"/>
-                                Không đối xứng
-                            </label>
-                        </div>
-                    </div>
-                    <div class="card card-footer">
-                        MARKS: 0 / 80
-                    </div>
-                </div>
-                <div class="pagination justify-content-center border border-info rounded p-2 mt-2">
-                    <a class="page-link border mx-2 bi bi-arrow-left-circle-fill" href="#"></a>
-                    <a class="page-link border mx-2 bi bi-arrow-up-circle-fill" href="#"></a>
-                    <a class="page-link border mx-2 bi bi-arrow-down-circle-fill" href="#"></a>
-                    <a class="page-link border mx-2 bi-arrow-right-circle-fill" href="#"></a>
-                </div>
-            </article>
-            <!--  -->
-            <aside class="col-3">
-                <div class="card card-header p-0">
-                    <b class="bi bi-list-ul m-2 " role="button" data-bs-target="#ls1" data-bs-toggle="collapse">
-                        DANH MỤC
-                    </b>
-                    <div class="list-group collapse show" id="ls1">
-                        <a href="#" class="list-group-item">Kiểm thử và triển khai</a>
-                        <a href="#" class="list-group-item">SQL Server</a>
-                        <a href="#" class="list-group-item">Điện toán đám mây</a>
-                        <a href="#" class="list-group-item">Lập trình PHP</a>
-                        <a href="#" class="list-group-item">Lập trình android nâng cao</a>
-                        <a href="#" class="list-group-item">Lập trình android cơ bản</a>
-                        <a href="#" class="list-group-item">Thiết kế layout</a>
-                        <a href="#" class="list-group-item">Thiết kế giao diện android</a>
-                        <a href="#" class="list-group-item">Quản lý dự án angile</a>
-                        <a href="#" class="list-group-item">Internet makerting</a>
-                        <a href="#" class="list-group-item">Lập trình hướng đối tượng với java</a>
-                        <a href="#" class="list-group-item">Lập trình ASP.NET</a>
-                    </div>
-                </div>
-            </aside>
-            <!--  -->
+    <div class="card card-body rounded-0">
+        <span>
+            <b>Câu {{stt + 1}}:</b><br/> {{quest.text}}
+        </span>
+        <hr class="my-3">
+        <form name="testing">
+            <label ng-repeat="item in quest.answers" class="d-block bg-light rounded border border-info mb-2 mt-1 p-1">
+                <input ng-click="pick(item.id)" ng-model="chAnswer" name="answer" type="radio" value="{{item.id}}"/>
+                {{item.text}}
+            </label>
+        </form>
+    </div>
+    <div class="card card-footer bg-white">
+        <div ng-hide="ched" class="pagination justify-content-center border border-info rounded p-2 mt-2 bg-light">
+            <button onclick="alert('Chưa chọn đáp án')" class="page-link border mx-2 bi bi-arrow-left-circle-fill" type="button"></button>
+            <button onclick="alert('Chưa chọn đáp án')" class="page-link border mx-2 bi-arrow-right-circle-fill" type="button"></button>
         </div>
-
+        <div ng-show="ched" class="pagination justify-content-center border border-info rounded p-2 mt-2 bg-light">
+            <button ng-click="prevQuest()" class="page-link border mx-2 bi bi-arrow-left-circle-fill" type="button"></button>
+            <button ng-click="nextQuest()" class="page-link border mx-2 bi-arrow-right-circle-fill" type="button"></button>
+        </div>
     </div>
+</div>
 
-    <div class="container-fluid">
-        <footer class="row">
-            <div class="card card-footer text-center pt-4">
-                <p>FPT Polytechnic &copy; 2021. All rights reverved.</p>
-            </div>
-        </footer>
+<div class="border-info rounded p-2 mt-2 bg-light">
+    <div class="card card-header text-primary">
+        <b class="bi bi-book-half">
+            Đáp án đã chọn
+        </b>
     </div>
-</body>
-</html>
+    <table class="table table-bordered table-hover w-100">
+        <thead>
+            <tr>
+                <th>stt</th>
+                <th>Câu hỏi</th>
+                <th>Câu trả lời</th>
+                <th>#</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr ng-repeat="pi in pickShow">
+                <td>{{pi.stt + 1}}</td>
+                <td>{{pi.text}}</td>
+                <td>{{pi.pick_answer.text}}</td>
+                <td><button class="btn btn-primary" type="button" ng-click="rework(pi.stt)">Làm lại</button></td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="4">
+                    Ấn vào kết thúc kiểm tra để xem đáp án và lưu kết quả vào lịch sử
+                </td>
+            </tr>
+        </tfoot>
+    </table>
+    <button ng-click="finishTest()" class="btn btn-success border mx-2" type="button">Kết thúc kiểm tra</button>
+</div>

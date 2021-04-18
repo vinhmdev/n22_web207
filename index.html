@@ -11,8 +11,9 @@
         .bg-main {
             background: #fca0a0;
             background-image: url('./img/bg-log.jpg');
-            /* background: -webkit-linear-gradient(to bottom, #8cb8ff, #6262de);
-            background: linear-gradient(to bottom, #ddc, #dd9); */
+        }
+        .bg-hover:hover {
+            background-color: #e9ecef;
         }
     </style>
 
@@ -75,16 +76,18 @@
             </div>
 
             <div class="nav-item dropdown ms-auto position-relative">
-                <button id="dropdownMenu" type="button" class="dropdown-toggle nav-link alert alert-link m-0 p-2 text-primary bg-light bi bi-person" data-bs-toggle="dropdown">
-                    Tài khoản
+                <button id="dropdownMenu" type="button" class="dropdown-toggle nav-link alert alert-link m-0 p-2 text-primary bg-light" data-bs-toggle="dropdown">
+                    <span class="bi bi-person" ng-hide="username">Tài khoản</span>
+                    <span class="bi bi-person-fill" ng-show="username">{{username}}</span>
                 </button>
                 <ul class="dropdown-menu position-absolute" aria-labelledby="dropdownMenu" style="right: 0; left: unset; min-width: 14rem;">
                     <li ng-hide="isLogin" class="dropdown-item"><a class="d-block text-decoration-none bi bi-pen" href="#!dang-ky"> Đăng ký</a></li>
                     <li ng-hide="isLogin" class="dropdown-item"><a class="d-block text-decoration-none bi bi-box-arrow-in-right" href="#!dang-nhap"> Đăng nhập</a></li>
                     <li ng-hide="isLogin" class="dropdown-item"><a class="d-block text-decoration-none bi bi-patch-question" href="#!quen-mat-khau"> Quên mật khẩu</a></li>
                     <!-- <li><hr/></li> -->
-                    <li ng-show="isLogin" class="dropdown-item"><a class="d-block text-decoration-none bi bi-arrow-left-right" href="#!doi-mat-khau"> Đổi mật khẩu</a></li>
+                    <li ng-show="isLogin" class="dropdown-item"><a class="d-block text-decoration-none bi bi-bookmark-check" href="#!lich-su"> Lịch sử học tập</a></li>
                     <li ng-show="isLogin" class="dropdown-item"><a class="d-block text-decoration-none bi bi-file-person" href="#!sua-tai-khoan"> Cập nhật tài khoản</a></li>
+                    <li ng-show="isLogin" class="dropdown-item"><a class="d-block text-decoration-none bi bi-arrow-left-right" href="#!doi-mat-khau"> Đổi mật khẩu</a></li>
                     <li ng-show="isLogin" ng-click="logout()" class="dropdown-item"><a class="d-block text-decoration-none bi bi-box-arrow-left" href="#"> Đăng xuất</a></li>
                 </ul>
             </div>
@@ -94,22 +97,28 @@
 
     <div class="container py-3">
         <div class="row">
-            <!--  -->
-            <article class="col-9">
-                <div ng-view class="w-100 h-100"></div>
-            </article>
-            <!--  -->
-            <aside class="col-3">
+             <!--  -->
+            <aside class="col-12 col-md-3">
                 <div class="card card-header p-0 bg-light">
-                    <b class="bi bi-list-ul m-2 " role="button" data-bs-target="#ls1" data-bs-toggle="collapse">
-                        DANH MỤC
+                    <b class=" bi bi-book m-2 text-primary" role="button" data-bs-target="#ls1" data-bs-toggle="collapse">
+                        DANH MỤC <b class="bi bi-caret-down-fill"></b>
                     </b>
                     <div class="list-group collapse show" id="ls1">
-                        <a ng-repeat="item in asideA" href="#" class="list-group-item">{{item.name}}</a>
+                        <a ng-repeat="item in asideA" href="#!trac-nghiem/{{item.id}}" class="list-group-item bg-hover">
+                            <img class="img img-thumbnail float-start my-0 me-3" style="height: 3em;" src="./img/logos/{{item.logo}}"> {{item.name}}
+                        </a>
                     </div>
                 </div>
             </aside>
             <!--  -->
+
+            <div class="d-block d-md-none my-2"></div>
+
+            <!--  -->
+            <article class="col-12 col-md-9">
+                <div ng-view class="w-100 h-100"></div>
+            </article>
+           <!--  -->
         </div>
 
     </div>
@@ -144,25 +153,37 @@
             .when('/quen-mat-khau', {templateUrl : './quen-mat-khau.html'})
             .when('/doi-mat-khau', {templateUrl : './doi-mat-khau.html'})
             .when('/sua-tai-khoan', {templateUrl : './sua-tai-khoan.html'})
+            .when('/trac-nghiem/:idMonHoc', {
+                templateUrl :  './trac-nghiem.html',
+                controller : 'trng'
+            })
+            .when('/lich-su', {
+                templateUrl :  './histo.html',
+                controller : 'histo'
+            })
             .otherwise({templateUrl: './mon-hoc.html'});
         });
 
         app.controller('myCtrl', ($scope, $http) => {
             //Kiểm tra đăng nhập hay chưa
-            document.cookie.split('; ').filter(item => {
+            $scope.username = '';
+            $scope.isLogin = '';
+            document.cookie.split('; ').forEach(item => {
+                if (item.startsWith('Username')){
+                    $scope.username = (item.substring(item.indexOf('=') + 1));
+                }
                 if (item.startsWith('LoginId')){
                     $scope.isLogin = (item.substring(item.indexOf('=') + 1));
-                    return true;
                 }
-                return false;
             });
             
             $scope.logout = function () {
                 document.cookie = 'LoginId=null;expires=' + new Date(0) + ';path=/';
-                document.cookie = 'User=null;expires=' + new Date(0) + ';path=/';
-                document.cookie = 'Pass=null;expires=' + new Date(0) + ';path=/';
+                // document.cookie = 'User=null;expires=' + new Date(0) + ';path=/';
+                // document.cookie = 'Pass=null;expires=' + new Date(0) + ';path=/';
+                document.cookie = 'Username=null;expires=' + new Date(0) + ';path=/';
                 document.location = '/';
-            }
+            };
 
             $http.get('http://localhost:3000/subjects').then(
                 response => {
@@ -171,9 +192,80 @@
                 error => {
                     alert('Không thể kết nối đến cơ sỡ dữ liệu');
                 }
-            )
+            );
         });
     </script>
+
+    <script>
+        app.controller('histo', function ($scope, $http) {
+            $scope.histoShow = [];
+            $scope.infes = [];
+            $scope.lengthPage = 1;
+            //Kiểm tra đăng nhập hay chưa
+            $scope.username = '';
+            $scope.isLogin = '';
+            document.cookie.split('; ').forEach(item => {
+                if (item.startsWith('Username')){
+                    $scope.username = (item.substring(item.indexOf('=') + 1));
+                }
+                if (item.startsWith('LoginId')){
+                    $scope.isLogin = (item.substring(item.indexOf('=') + 1));
+                }
+            });
+            $http.get('http://localhost:3000/histo?idUser=' + $scope.isLogin + '&_sort=id&_order=desc')
+            .then(
+                response => {
+                    response.data.forEach(item => {
+                        let detalT = (new Date(item.end).getTime() - new Date(item.start).getTime()) / 1000;
+
+                        var info = {
+                            start: item.start,
+                            end: item.end,
+                            detalTime : detalT
+                        };
+                        $http.get('http://localhost:3000/subjects/'+item.idSubject)
+                        .then(
+                            rs => {
+                                info.nameSubject = rs.data.name;
+                                $scope.infes.push(angular.copy(info));
+                            }
+                        );
+
+                        var listData = [];
+                        item.histo.forEach(itemHisto => {
+                            var showData = {
+                                note: ''
+                            };
+                            showData.id = itemHisto.id;
+                            showData.quest = itemHisto.text;
+                            showData.myAnswer = itemHisto.answers.reduce((non, itemAnswers) => {
+                                if (itemAnswers.id == itemHisto.pick_answer_id){
+                                    return itemAnswers.text;
+                                }
+                                return non;
+                            }, '');
+                            showData.status = itemHisto.answer_id == itemHisto.pick_answer_id;
+                            if (!showData.status) {
+                                showData.note = itemHisto.answers.reduce((non, itemAnswers) => {
+                                    if (itemAnswers.id == itemHisto.answer_id){
+                                        return itemAnswers.text;
+                                    }
+                                    return non;
+                                }, '');
+                            }
+                            listData.push(angular.copy(showData));
+                        });
+                        $scope.histoShow.push(angular.copy(listData));
+                        $scope.lengthPage = $scope.histoShow.length;
+                    });
+                },
+                error => {
+                    alert('Không thể kết nối đến cơ sở dữ liệu');
+                }
+            );
+        });
+    </script>
+    <script src="./js/module/trac-nghiem.js"></script>
     <script src="./js/module/dang-nhap.js"></script>
     <script src="./js/module/dang-ky.js"></script>
 </body>
