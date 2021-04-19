@@ -32,6 +32,17 @@
       "birthday": "2001-01-10",
       "schoolfee": 2000000,
       "marks": 0
+    },
+    {
+      "username": "thentv",
+      "password": "123456",
+      "email": "thentv@gmail.com",
+      "fullname": "tran van then",
+      "birthday": "1974/10/25",
+      "gender": true,
+      "schoolfee": 0,
+      "marks": 0,
+      "id": 4
     }
   ],
   "subjects": [
@@ -34689,6 +34700,190 @@
       "start": "2021-04-18T16:53:09.575Z",
       "end": "2021-04-18T16:54:33.347Z",
       "id": 4
+    },
+    {
+      "idUser": "2",
+      "idSubject": "adav",
+      "histo": [
+        {
+          "id": 25106,
+          "text": "Có mấy loại Service?",
+          "marks": 1,
+          "answer_id": 104121,
+          "answers": [
+            {
+              "id": 104118,
+              "text": "3"
+            },
+            {
+              "id": 104119,
+              "text": "4"
+            },
+            {
+              "id": 104120,
+              "text": "1"
+            },
+            {
+              "id": 104121,
+              "text": "2"
+            }
+          ],
+          "pick_answer_id": 104119
+        },
+        {
+          "id": 25107,
+          "text": "Trong IntentService, phương thức onHandlerIntent sẽ được tự động gọi trong phương thức nào?",
+          "marks": 1,
+          "answer_id": 104124,
+          "answers": [
+            {
+              "id": 104122,
+              "text": "onServiceConnected()"
+            },
+            {
+              "id": 104123,
+              "text": "onServiceDisConnected()"
+            },
+            {
+              "id": 104124,
+              "text": "onStartCommand()"
+            },
+            {
+              "id": 104125,
+              "text": "onBind()"
+            }
+          ],
+          "pick_answer_id": 104123
+        },
+        {
+          "id": 25108,
+          "text": "Khi nào phương thức ServiceConnection.onServiceConnected được gọi?",
+          "marks": 1,
+          "answer_id": 104126,
+          "answers": [
+            {
+              "id": 104126,
+              "text": "Sau khi một thành phần gọi Context.startService()"
+            },
+            {
+              "id": 104127,
+              "text": "Sau khi một thành phần gọi Context.bindService()"
+            },
+            {
+              "id": 104128,
+              "text": "Sau khi BroadcastReceiver nhận một Intent được gửi bởi Service"
+            },
+            {
+              "id": 104129,
+              "text": "Khi một Service gọi Context.startActivity()"
+            }
+          ],
+          "pick_answer_id": 104127
+        },
+        {
+          "id": 25109,
+          "text": "Phương thức Service.stopSelf(int startId) có tham số kiểu int. Tham số này dùng để làm gì?",
+          "marks": 1,
+          "answer_id": 104132,
+          "answers": [
+            {
+              "id": 104130,
+              "text": "Nếu startId khác 0, Service sẽ bị hủy một cách vô điều kiện"
+            },
+            {
+              "id": 104131,
+              "text": "Tham số miêu tả số miliseconds bị trì hoãn trước khi Service bị hủy"
+            },
+            {
+              "id": 104132,
+              "text": "Là start identifier gần nhất nhận được bởi lời gọi onStart(Intent, int)"
+            },
+            {
+              "id": 104133,
+              "text": "Được sử dụng để dừng Service nếu Service đang chạy trong process id với process id bằng giá trị startid"
+            }
+          ],
+          "pick_answer_id": 104131
+        }
+      ],
+      "start": "2021-04-19T06:42:28.270Z",
+      "end": "2021-04-19T06:44:56.914Z",
+      "id": 5
+    },
+    {
+      "idUser": "2",
+      "idSubject": "jaav",
+      "histo": [
+        {
+          "id": 26120,
+          "text": "Package nào chứa các class kiểu dữ liệu",
+          "marks": 1,
+          "answer_id": 108224,
+          "answers": [
+            {
+              "id": 108224,
+              "text": "java.lang"
+            },
+            {
+              "id": 108225,
+              "text": "java.io"
+            },
+            {
+              "id": 108226,
+              "text": "java.ouput"
+            },
+            {
+              "id": 108227,
+              "text": "java.swing"
+            },
+            {
+              "id": 108228,
+              "text": "java.util"
+            },
+            {
+              "id": 108229,
+              "text": "java.input"
+            }
+          ],
+          "pick_answer_id": 108224
+        },
+        {
+          "id": 26121,
+          "text": "Trong file MyCode.java chứa đoạn code sau: public class MyClass{}public interface MyInterface{}Mô tả nào đúng với đoạn code này trong file MyCode?",
+          "marks": 1,
+          "answer_id": 108230,
+          "answers": [
+            {
+              "id": 108230,
+              "text": "Đoạn code trên không có phương thức main()"
+            },
+            {
+              "id": 108231,
+              "text": "MyClass phải kế thừa từ MyInterface"
+            },
+            {
+              "id": 108232,
+              "text": "Không thể có một public class hoặc interface có cùng tên trong file code Java này."
+            },
+            {
+              "id": 108233,
+              "text": "MyClass phải thực thi MyInterface"
+            },
+            {
+              "id": 108234,
+              "text": "Phải có một public class hoặc interface có tên là MyCode"
+            },
+            {
+              "id": 108235,
+              "text": "Phải có nhiều public class hoặc interface có tên là MyCode"
+            }
+          ],
+          "pick_answer_id": 108230
+        }
+      ],
+      "start": "2021-04-19T06:45:36.899Z",
+      "end": "2021-04-19T06:45:56.730Z",
+      "id": 6
     }
   ],
   "vbpr": [
