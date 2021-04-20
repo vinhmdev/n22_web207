@@ -35829,6 +35829,40 @@
   "histo": [
     {
       "id": 0
+    },
+    {
+      "idUser": "1",
+      "idSubject": "adbs",
+      "histo": [
+        {
+          "id": 25026,
+          "text": "Điều khiển được sử dụng để hiển thị nội dụng trang web trong ứng dụng Android?",
+          "marks": 1,
+          "answer_id": 103784,
+          "answers": [
+            {
+              "id": 103783,
+              "text": "Button"
+            },
+            {
+              "id": 103784,
+              "text": "WebView"
+            },
+            {
+              "id": 103785,
+              "text": "Spinner"
+            },
+            {
+              "id": 103786,
+              "text": "EditText"
+            }
+          ],
+          "pick_answer_id": 103785
+        }
+      ],
+      "start": "2021-04-20T16:03:03.205Z",
+      "end": "2021-04-20T16:03:05.803Z",
+      "id": 1
     }
   ],
   "vbpr": [
