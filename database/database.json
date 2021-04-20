@@ -34884,6 +34884,341 @@
       "start": "2021-04-19T06:45:36.899Z",
       "end": "2021-04-19T06:45:56.730Z",
       "id": 6
+    },
+    {
+      "idUser": "1",
+      "idSubject": "asne",
+      "histo": [
+        {
+          "id": 25970,
+          "text": "Lập trình viên thường gán giá trị mặc định cho các điều khiển trong phương thức xử lý sự kiện ........... của trang",
+          "marks": 1,
+          "answer_id": 107573,
+          "answers": [
+            {
+              "id": 107571,
+              "text": "Prerender"
+            },
+            {
+              "id": 107572,
+              "text": "Init"
+            },
+            {
+              "id": 107573,
+              "text": "Load"
+            },
+            {
+              "id": 107574,
+              "text": "Unload"
+            }
+          ],
+          "pick_answer_id": 107571
+        },
+        {
+          "id": 25971,
+          "text": "Bạn hãy cho biết định nghĩa nào sau đây là nói về ứng dụng web?",
+          "marks": 1,
+          "answer_id": 107575,
+          "answers": [
+            {
+              "id": 107575,
+              "text": "Là một ứng dụng client/server được truy cập thông qua trình duyệt Web trên mạng Internet hoặc intranet"
+            },
+            {
+              "id": 107576,
+              "text": "Các phương án đều đúng"
+            },
+            {
+              "id": 107577,
+              "text": "Là ứng dụng chỉ chạy trên một máy tính đơn"
+            },
+            {
+              "id": 107578,
+              "text": "Là ứng dụng chỉ chạy trên môi trường mobile"
+            }
+          ],
+          "pick_answer_id": 107577
+        },
+        {
+          "id": 25972,
+          "text": "Để hiển thị dòng \"Hello World\" trên trang web, trong ASP.Net cần dùng lệnh nào?",
+          "marks": 1,
+          "answer_id": 107582,
+          "answers": [
+            {
+              "id": 107579,
+              "text": "Document.Write(\"Hello World\");"
+            },
+            {
+              "id": 107580,
+              "text": "\"Hello World\""
+            },
+            {
+              "id": 107581,
+              "text": "Request.Write((\"Hello World\");"
+            },
+            {
+              "id": 107582,
+              "text": "Response.Write(\"Hello World\");"
+            }
+          ],
+          "pick_answer_id": 107580
+        },
+        {
+          "id": 25973,
+          "text": "Phát biểu nào sau đây đúng về ASP.NET?",
+          "marks": 1,
+          "answer_id": 107584,
+          "answers": [
+            {
+              "id": 107583,
+              "text": "ASP.NET là mô hình lập trình hướng cấu trúc"
+            },
+            {
+              "id": 107584,
+              "text": "ASP.NET là mô hình lập trình hướng sự kiện"
+            },
+            {
+              "id": 107585,
+              "text": "ASP.NET là mô hình lập trình hướng thành phần"
+            },
+            {
+              "id": 107586,
+              "text": "ASP.NET là mô hình lập trình hướng đối tượng"
+            }
+          ],
+          "pick_answer_id": 107585
+        }
+      ],
+      "start": "2021-04-19T07:45:24.873Z",
+      "end": "2021-04-19T07:45:39.802Z",
+      "id": 7
+    },
+    {
+      "idUser": "1",
+      "idSubject": "jaav",
+      "histo": [
+        {
+          "id": 26120,
+          "text": "Package nào chứa các class kiểu dữ liệu",
+          "marks": 1,
+          "answer_id": 108224,
+          "answers": [
+            {
+              "id": 108224,
+              "text": "java.lang"
+            },
+            {
+              "id": 108225,
+              "text": "java.io"
+            },
+            {
+              "id": 108226,
+              "text": "java.ouput"
+            },
+            {
+              "id": 108227,
+              "text": "java.swing"
+            },
+            {
+              "id": 108228,
+              "text": "java.util"
+            },
+            {
+              "id": 108229,
+              "text": "java.input"
+            }
+          ],
+          "pick_answer_id": 108224
+        },
+        {
+          "id": 26121,
+          "text": "Trong file MyCode.java chứa đoạn code sau: public class MyClass{}public interface MyInterface{}Mô tả nào đúng với đoạn code này trong file MyCode?",
+          "marks": 1,
+          "answer_id": 108230,
+          "answers": [
+            {
+              "id": 108230,
+              "text": "Đoạn code trên không có phương thức main()"
+            },
+            {
+              "id": 108231,
+              "text": "MyClass phải kế thừa từ MyInterface"
+            },
+            {
+              "id": 108232,
+              "text": "Không thể có một public class hoặc interface có cùng tên trong file code Java này."
+            },
+            {
+              "id": 108233,
+              "text": "MyClass phải thực thi MyInterface"
+            },
+            {
+              "id": 108234,
+              "text": "Phải có một public class hoặc interface có tên là MyCode"
+            },
+            {
+              "id": 108235,
+              "text": "Phải có nhiều public class hoặc interface có tên là MyCode"
+            }
+          ],
+          "pick_answer_id": 108230
+        },
+        {
+          "id": 26122,
+          "text": "Trong Java, 5/2 có kết quả là:",
+          "marks": 1,
+          "answer_id": 108240,
+          "answers": [
+            {
+              "id": 108236,
+              "text": "0"
+            },
+            {
+              "id": 108237,
+              "text": "Có lỗi"
+            },
+            {
+              "id": 108238,
+              "text": "3"
+            },
+            {
+              "id": 108239,
+              "text": "2.5"
+            },
+            {
+              "id": 108240,
+              "text": "2"
+            }
+          ],
+          "pick_answer_id": 108240
+        }
+      ],
+      "start": "2021-04-19T10:13:41.909Z",
+      "end": "2021-04-19T10:14:10.941Z",
+      "id": 8
+    },
+    {
+      "idUser": "1",
+      "idSubject": "asne",
+      "histo": [
+        {
+          "id": 25970,
+          "text": "Lập trình viên thường gán giá trị mặc định cho các điều khiển trong phương thức xử lý sự kiện ........... của trang",
+          "marks": 1,
+          "answer_id": 107573,
+          "answers": [
+            {
+              "id": 107571,
+              "text": "Prerender"
+            },
+            {
+              "id": 107572,
+              "text": "Init"
+            },
+            {
+              "id": 107573,
+              "text": "Load"
+            },
+            {
+              "id": 107574,
+              "text": "Unload"
+            }
+          ],
+          "pick_answer_id": 107573
+        }
+      ],
+      "start": "2021-04-19T10:15:57.993Z",
+      "end": "2021-04-19T10:16:00.809Z",
+      "id": 9
+    },
+    {
+      "idUser": "1",
+      "idSubject": "pmag",
+      "histo": [
+        {
+          "id": 24791,
+          "text": "Phẩm chất nào không nằm trong 7 phẩm chất quan trọng mà Product Owner cần có?",
+          "marks": 1,
+          "answer_id": 102847,
+          "answers": [
+            {
+              "id": 102847,
+              "text": "Có kỹ năng của một Tester"
+            },
+            {
+              "id": 102848,
+              "text": "Có tầm nhìn và kiến thức rõ ràng về sản phẩm"
+            },
+            {
+              "id": 102849,
+              "text": "Biết cách quản lý thành công kỳ vọng của các bên liên quan và đôi khi là mâu thuẫn về độ ưu tiên"
+            },
+            {
+              "id": 102850,
+              "text": "Biết cách thu thập yêu cầu để chuyển tầm nhìn sản phẩm thành một Product Backlog tốt"
+            }
+          ],
+          "pick_answer_id": 102850
+        },
+        {
+          "id": 24792,
+          "text": "Cách tiếp cận tầm nhìn sản phẩm sử dụng kỹ thuật gì?",
+          "marks": 1,
+          "answer_id": 102855,
+          "answers": [
+            {
+              "id": 102851,
+              "text": "5X"
+            },
+            {
+              "id": 102852,
+              "text": "5S"
+            },
+            {
+              "id": 102853,
+              "text": "5A"
+            },
+            {
+              "id": 102854,
+              "text": "5Y"
+            },
+            {
+              "id": 102855,
+              "text": "5W"
+            }
+          ],
+          "pick_answer_id": 102853
+        },
+        {
+          "id": 24793,
+          "text": "Phương án nào không phải lợi ích khi xác định mục tiêu của Sprint?",
+          "marks": 1,
+          "answer_id": 102856,
+          "answers": [
+            {
+              "id": 102856,
+              "text": "Hỗ trợ giao tiếp giữa các phòng ban trong công ty"
+            },
+            {
+              "id": 102857,
+              "text": "Nhận thông tin phản hồi"
+            },
+            {
+              "id": 102858,
+              "text": "Tạo sự tập trung và hỗ trợ nhóm tốt hơn từ khách hàng"
+            },
+            {
+              "id": 102859,
+              "text": "Thuận tiện khi phân tích phản hồi"
+            }
+          ],
+          "pick_answer_id": 102858
+        }
+      ],
+      "start": "2021-04-19T10:16:53.679Z",
+      "end": "2021-04-19T10:17:36.119Z",
+      "id": 10
     }
   ],
   "vbpr": [

@@ -6,12 +6,12 @@
        <div class="row">
            <div class="col">
             <div class="form-group">
-                <textarea class="w-100" name="question" id="question" cols="126" rows="5" placeholder="Nhập câu hỏi tại đây"></textarea>
+                <textarea ng-model="noiDung" class="w-100" name="question" id="question" cols="126" rows="5" placeholder="Nhập câu hỏi tại đây"></textarea>
             </div>
            </div>
        </div>
     </div>
     <div class="card-footer">
-        <button class="btn btn-success">Gửi</button>
+        <button ng-click="btnSendMail()" class="btn btn-success">Gửi</button>
     </div>
 </div>
