@@ -3,7 +3,7 @@
     {
       "id": 1,
       "username": "vinhlm",
-      "password": "vinhlmpass",
+      "password": "vi",
       "fullname": "Lê Minh Vinh",
       "email": "vinhlmpc01238@fpt.edu.vn",
       "gender": true,
@@ -9915,19 +9915,19 @@
       "answers": [
         {
           "id": 103555,
-          "text": "SELECT @a = 1, @b = \u0027kí tự Unicode\u0027"
+          "text": "SELECT @a = 1, @b = 'kí tự Unicode'"
         },
         {
           "id": 103556,
-          "text": "SET @a = 1, @b = \u0027kí tự Unicode\u0027"
+          "text": "SET @a = 1, @b = 'kí tự Unicode'"
         },
         {
           "id": 103557,
-          "text": "SET @a = 1, @b = N\u0027kí tự Unicode\u0027"
+          "text": "SET @a = 1, @b = N'kí tự Unicode'"
         },
         {
           "id": 103558,
-          "text": "SELECT @a = 1, @b = N\u0027kí tự Unicode\u0027"
+          "text": "SELECT @a = 1, @b = N'kí tự Unicode'"
         }
       ]
     },
@@ -10077,7 +10077,7 @@
     },
     {
       "id": 24976,
-      "text": "Giả sử biến @String được khai báo như sau DECLARE @String varchar.Mã kịch bản sau trả về kết quả là SET @String = \u0027SQL Server 2008\u0027 SELECT LEN(@String)",
+      "text": "Giả sử biến @String được khai báo như sau DECLARE @String varchar.Mã kịch bản sau trả về kết quả là SET @String = 'SQL Server 2008' SELECT LEN(@String)",
       "marks": 1,
       "answer_id": 103586,
       "answers": [
@@ -10149,7 +10149,7 @@
     },
     {
       "id": 24979,
-      "text": "Lệnh gán giá trị cho cột PaymentDate có kiểu SmallDatetime sau đây có thực hiện phép chuyển đổi ngầm không PaymentDate = \u00272008-08-05\u0027",
+      "text": "Lệnh gán giá trị cho cột PaymentDate có kiểu SmallDatetime sau đây có thực hiện phép chuyển đổi ngầm không PaymentDate = '2008-08-05'",
       "marks": 1,
       "answer_id": 103597,
       "answers": [
@@ -10221,7 +10221,7 @@
     },
     {
       "id": 24982,
-      "text": "Câu lệnh SELECT DATEDIFF(month, \u00272008-09-30\u0027, \u00272007-12-01\u0027) sau đây trả về kết quả là:",
+      "text": "Câu lệnh SELECT DATEDIFF(month, '2008-09-30', '2007-12-01') sau đây trả về kết quả là:",
       "marks": 1,
       "answer_id": 103609,
       "answers": [
@@ -10245,7 +10245,7 @@
     },
     {
       "id": 24983,
-      "text": "Cột StartDate của bảng DateSample có kiểu dữ liệu datetime. Câu lệnh SELECT nào sau đây trả về tất cả các cột của bảng DateSample có StartDate là ngày 28-02-2012 A. SELECT * FROM DateSample WHERE StartDate = \u00272012-02-28\u0027 B. SELECT * FROM DateSample WHERE ",
+      "text": "Cột StartDate của bảng DateSample có kiểu dữ liệu datetime. Câu lệnh SELECT nào sau đây trả về tất cả các cột của bảng DateSample có StartDate là ngày 28-02-2012 A. SELECT * FROM DateSample WHERE StartDate = '2012-02-28' B. SELECT * FROM DateSample WHERE ",
       "marks": 1,
       "answer_id": 103612,
       "answers": [
@@ -10293,7 +10293,7 @@
     },
     {
       "id": 24985,
-      "text": "Câu lệnh SELECT CHARINDEX(\u0027SQL\u0027, \u0027HELLO SQL Server\u0027) trả về kết quả là",
+      "text": "Câu lệnh SELECT CHARINDEX('SQL', 'HELLO SQL Server') trả về kết quả là",
       "marks": 1,
       "answer_id": 103622,
       "answers": [
@@ -10423,11 +10423,11 @@
         },
         {
           "id": 103640,
-          "text": "Khi thực thi câu lệnh COMMIT TRAN, nếu @@TRANCOUNT \u003e 1, mọi thay đổi đã được thực hiện trên CSDL trong suốt giao dịch sẽ được commit."
+          "text": "Khi thực thi câu lệnh COMMIT TRAN, nếu @@TRANCOUNT > 1, mọi thay đổi đã được thực hiện trên CSDL trong suốt giao dịch sẽ được commit."
         },
         {
           "id": 103641,
-          "text": "Khi thực thi câu lệnh COMMIT TRAN, nếu @@TRANCOUNT \u003e 1, các thay đổi sẽ không được commit. Thay vào đó @@TRANCOUNT giảm đi 1."
+          "text": "Khi thực thi câu lệnh COMMIT TRAN, nếu @@TRANCOUNT > 1, các thay đổi sẽ không được commit. Thay vào đó @@TRANCOUNT giảm đi 1."
         },
         {
           "id": 103642,
@@ -10461,7 +10461,7 @@
     },
     {
       "id": 24992,
-      "text": "Phát biểu nào sau đây đúng về Stored Procedure sau: CREATE PROC spParameters @a int = 0, @b int OUT, @String Nvarchar(50) = \u0027%\u0027 AS",
+      "text": "Phát biểu nào sau đây đúng về Stored Procedure sau: CREATE PROC spParameters @a int = 0, @b int OUT, @String Nvarchar(50) = '%' AS",
       "marks": 1,
       "answer_id": 103650,
       "answers": [
@@ -10533,7 +10533,7 @@
     },
     {
       "id": 24995,
-      "text": "Mã kịch bản sau sẽ làm gì khi được thực thi IF OBJECT_ID(\u0027spCopyInvoices\u0027) IS NOT NULL DROP PROC spCopyInvoices CREATE PROC spCopyInvoices AS SELECT * INTO InvoiceCopy FROM Invoices",
+      "text": "Mã kịch bản sau sẽ làm gì khi được thực thi IF OBJECT_ID('spCopyInvoices') IS NOT NULL DROP PROC spCopyInvoices CREATE PROC spCopyInvoices AS SELECT * INTO InvoiceCopy FROM Invoices",
       "marks": 1,
       "answer_id": 103660,
       "answers": [
@@ -10587,7 +10587,7 @@
       "answers": [
         {
           "id": 103667,
-          "text": "DROP \u0027Vendors_SW\u0027"
+          "text": "DROP 'Vendors_SW'"
         },
         {
           "id": 103668,
@@ -10595,7 +10595,7 @@
         },
         {
           "id": 103669,
-          "text": "DROP VIEW \u0027Vendors_SW\u0027"
+          "text": "DROP VIEW 'Vendors_SW'"
         },
         {
           "id": 103670,
@@ -10701,7 +10701,7 @@
     },
     {
       "id": 25002,
-      "text": "Phát biểu nào ĐÚNG về đoạn mã dưới đây? CREATE VIEW OutstandingInvoices AS SELECT InvoiceNumber, InvoiceDate, InvoiceTotal, InvoiceTotal - PaymentTotal – CreditTotal AS BalanceDue FROM Invoices WHERE InvoiceTotal - PaymentTotal - CreditTotal \u003e 0",
+      "text": "Phát biểu nào ĐÚNG về đoạn mã dưới đây? CREATE VIEW OutstandingInvoices AS SELECT InvoiceNumber, InvoiceDate, InvoiceTotal, InvoiceTotal - PaymentTotal – CreditTotal AS BalanceDue FROM Invoices WHERE InvoiceTotal - PaymentTotal - CreditTotal > 0",
       "marks": 1,
       "answer_id": 103689,
       "answers": [
@@ -10923,19 +10923,19 @@
       "answers": [
         {
           "id": 103723,
-          "text": "CREATE LOGIN JohnDoe WITH PASSWORD = \u0027pt8806FG$B\u0027, DEFAULT_DATABASE = AP USE APCREATE USER JohnDoe FOR LOGIN JohnDoe"
+          "text": "CREATE LOGIN JohnDoe WITH PASSWORD = 'pt8806FG$B', DEFAULT_DATABASE = AP USE APCREATE USER JohnDoe FOR LOGIN JohnDoe"
         },
         {
           "id": 103724,
-          "text": "CREATE LOGIN ID JohnDoe WITH PASSWORD = \u0027pt8806FG$B\u0027, DEFAULT_DATABASE = AP USE APCREATE USER JohnDoe"
+          "text": "CREATE LOGIN ID JohnDoe WITH PASSWORD = 'pt8806FG$B', DEFAULT_DATABASE = AP USE APCREATE USER JohnDoe"
         },
         {
           "id": 103725,
-          "text": "CREATE LOGIN ID JohnDoe WITH PASSWORD = \u0027pt8806FG$B\u0027, DEFAULT_DATABASE = AP USE APCREATE USER JohnDoe FOR LOGIN ID JohnDoe"
+          "text": "CREATE LOGIN ID JohnDoe WITH PASSWORD = 'pt8806FG$B', DEFAULT_DATABASE = AP USE APCREATE USER JohnDoe FOR LOGIN ID JohnDoe"
         },
         {
           "id": 103726,
-          "text": "CREATE LOGIN JohnDoe WITH PASSWORD = \u0027pt8806FG$B\u0027, DEFAULT_DATABASE = AP USE APCREATE DATABASE USER JohnDoe FOR LOGIN JohnDoe"
+          "text": "CREATE LOGIN JohnDoe WITH PASSWORD = 'pt8806FG$B', DEFAULT_DATABASE = AP USE APCREATE DATABASE USER JohnDoe FOR LOGIN JohnDoe"
         }
       ]
     },
@@ -11037,7 +11037,7 @@
     },
     {
       "id": 25016,
-      "text": "Invoices là tên một bảng trong CSDL. Câu lệnh sp_Help \u0027Invoices\u0027 trả về___________",
+      "text": "Invoices là tên một bảng trong CSDL. Câu lệnh sp_Help 'Invoices' trả về___________",
       "marks": 1,
       "answer_id": 103743,
       "answers": [
