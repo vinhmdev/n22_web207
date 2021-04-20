@@ -1,4 +1,4 @@
-<form action="" method="post">
+<form action="" method="post" name="changePassword">
     <div class="card">
         <div class="card-header text-primary">
             <b class="bi bi-arrow-left-right"> ĐỔI MẬT KHẨU</b>
@@ -10,20 +10,23 @@
                     <div class="form-group">
                         <label>Tên tài khoản:</label>
                         <input tabindex="1" type="text" class="form-control" name="username" id="username" ng-model="usernameRp" name="username" readonly>
-                    </div>
+                    </div><br>
                     <div class="form-group">
                         <label>Mật khẩu mới:</label>
-                        <input tabindex="3" type="password" class="form-control" name="newpass1" ng-model="newpass1Rp">
+                        <input tabindex="3" type="password" class="form-control" name="newpass1" ng-model="newpass1Rp" required>
+                        <div ng-show="changePassword.newpass1.$invalid" class="form-text text-danger my-0">Vui lòng nhập mật khẩu mới</div>
                     </div>
                 </div>
                 <div class="col">
                     <div class="form-group">
                         <label>Mật khẩu hiện tại:</label>
-                        <input tabindex="2" type="password" class="form-control" name="passRp" ng-model="passRp">
+                        <input tabindex="2" type="password" class="form-control" name="passRp" ng-model="passRp" required>
+                        <div ng-show="changePassword.newpass1.$invalid" class="form-text text-danger my-0">Vui lòng nhập mật khẩu hiện tại</div>
                     </div>
                     <div class="form-group">
                         <label>Nhập lại mật khẩu:</label>
-                        <input tabindex="4" type="password" class="form-control" name="newpass2" ng-model="newpass2Rp">
+                        <input tabindex="4" type="password" class="form-control" name="newpass2" ng-model="newpass2Rp" required>
+                        <div ng-show="changePassword.newpass2.$invalid" class="form-text text-danger my-0">Vui lòng nhập lại mật khẩu mới</div>
                     </div>
                 </div>
             </div>
