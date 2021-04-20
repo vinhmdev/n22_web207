@@ -1,16 +1,28 @@
-<form class="mb-3" method="get">
+<form class="mb-3" method="get" name="lienHe">
     <div class="card card-header bg-light text-primary">
         <b class="bi bi-phone-fill"> LIÊN HỆ</b>
     </div>
 
     <div class="card card-body rounded-0">
-        <input id="fname" name="name" type="text" placeholder="Họ và Tên:" class="form-control mb-3">
-        <input id="email" name="email" type="text" placeholder="Email" class="form-control mb-3">
-        <input id="phone" name="phone" type="text" placeholder="Số điện thoại" class="form-control mb-3">
-        <textarea class="form-control w-100 mb-3" id="message" name="message" placeholder="Nội dung"
-            rows="6"></textarea>
+        <span ng-show="lienHe.name.$invalid">Vui lòng nhập họ tên</span>
+        <input id="fname" name="name" type="text" ng-model="fname" placeholder="Họ và Tên:" class="form-control mb-3" required>
+      
+        <span ng-show="lienHe.email.$invalid">Vui lòng nhập đúng email</span>
+        <input id="email" name="email" type="text" ng-model="email" pattern= "(\w)+@{1}(\w)+(\.(\w)+)" placeholder="Email" class="form-control mb-3" required>
+
+        <span ng-show="lienHe.phone.$invalid">Vui lòng nhập đúng số điện thoại</span>
+        <input id="phone" name="phone" type="number" ng-model="phone" pattern= "0\d{9}" placeholder="Số điện thoại" class="form-control mb-3" required>
+       
+        <span ng-show="lienHe.message.$invalid">Nội dung không được trống</span>
+        <textarea class="form-control w-100 mb-3" ng-model="message" id="message" name="message" placeholder="Nội dung"
+            rows="6" required></textarea>
+           
+
         <button type="submit" class="btn btn-primary w-25">Gửi</button>
     </div>
+
+       
+   
 </form>
 <div class="card p-3">
     <h3>Địa chỉ liên hệ trực tiếp:</h3>
