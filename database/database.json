@@ -32,17 +32,6 @@
       "birthday": "2001-01-10",
       "schoolfee": 2000000,
       "marks": 0
-    },
-    {
-      "username": "thentv",
-      "password": "123456",
-      "email": "thentv@gmail.com",
-      "fullname": "tran van then",
-      "birthday": "1974/10/25",
-      "gender": true,
-      "schoolfee": 0,
-      "marks": 0,
-      "id": 4
     }
   ],
   "subjects": [
@@ -9601,6 +9590,1688 @@
         {
           "id": 107890,
           "text": "Tất cả các phương án đều sai"
+        }
+      ]
+    }
+  ],
+  "dbav": [
+    {
+      "id": 24956,
+      "text": "Chọn phát biểu đúng về SQL Server A. Là hệ quản trị nội dung cho phép đồng thời một lúc có nhiều người dùng truy xuất đến dữ liệu. B. SQL Server sử dụng điển hình trong các hệ thống nhỏ đến trung bình chạy trên một hoặc nhiều máy chủ Windows C. Là hệ quản",
+      "marks": 1,
+      "answer_id": 103506,
+      "answers": [
+        {
+          "id": 103503,
+          "text": "B,D Đúng"
+        },
+        {
+          "id": 103504,
+          "text": "D Đúng"
+        },
+        {
+          "id": 103505,
+          "text": "A,B Đúng"
+        },
+        {
+          "id": 103506,
+          "text": "C, B Đúng"
+        }
+      ]
+    },
+    {
+      "id": 24957,
+      "text": "SQL sử dụng ngôn ngữ nào sau đây để truy vấn CSDL: A. SQL B. PL-SQL C. Transact-SQL",
+      "marks": 1,
+      "answer_id": 103508,
+      "answers": [
+        {
+          "id": 103507,
+          "text": "B Đúng"
+        },
+        {
+          "id": 103508,
+          "text": "C Đúng"
+        },
+        {
+          "id": 103509,
+          "text": "Cả A, B, C đều sai"
+        },
+        {
+          "id": 103510,
+          "text": "A Đúng"
+        }
+      ]
+    },
+    {
+      "id": 24958,
+      "text": "Câu lệnh nào sau đây là câu lệnh điều khiển dữ liệu (DCL) A DENY B CREATE C GRANT D REVOKE",
+      "marks": 1,
+      "answer_id": 103511,
+      "answers": [
+        {
+          "id": 103511,
+          "text": "A, C, D đúng"
+        },
+        {
+          "id": 103512,
+          "text": "B, C , D đúng"
+        },
+        {
+          "id": 103513,
+          "text": "A, B , Dđúng"
+        },
+        {
+          "id": 103514,
+          "text": "A, B, C đúng"
+        }
+      ]
+    },
+    {
+      "id": 24959,
+      "text": "Để khởi động và dừng SQL Server sử dụng công cụ nào dưới đây:",
+      "marks": 1,
+      "answer_id": 103518,
+      "answers": [
+        {
+          "id": 103515,
+          "text": "SQL Server Start/Stop Manager"
+        },
+        {
+          "id": 103516,
+          "text": "SQL Server Configuration Management"
+        },
+        {
+          "id": 103517,
+          "text": "SQL Server Management Studio"
+        },
+        {
+          "id": 103518,
+          "text": "SQL Server Configuration Manager"
+        }
+      ]
+    },
+    {
+      "id": 24960,
+      "text": "Các ứng dụng nào sau đây có thể truy cập tới hệ quản trị CSDL SQL Server",
+      "marks": 1,
+      "answer_id": 103520,
+      "answers": [
+        {
+          "id": 103519,
+          "text": "Ứng dụng .NET"
+        },
+        {
+          "id": 103520,
+          "text": "Tất cả đáp án đều đúng"
+        },
+        {
+          "id": 103521,
+          "text": "Ứng dụng Java"
+        },
+        {
+          "id": 103522,
+          "text": "Ứng dụng Visual Basic 6"
+        }
+      ]
+    },
+    {
+      "id": 24961,
+      "text": "Phát biểu nào sau đây ĐÚNG về T-SQL?",
+      "marks": 1,
+      "answer_id": 103524,
+      "answers": [
+        {
+          "id": 103523,
+          "text": "Có thể sử dụng T-SQL để thao tác trên mọi hệ quản trị CSDL quan hệ"
+        },
+        {
+          "id": 103524,
+          "text": "T-SQL là ngôn ngữ mở rộng của SQL chuẩn, cung cấp thêm các tính năng lập trình"
+        },
+        {
+          "id": 103525,
+          "text": "T-SQL là tên gọi khác của ngôn ngữ SQL"
+        },
+        {
+          "id": 103526,
+          "text": "Tất cả các đáp án đều sai"
+        }
+      ]
+    },
+    {
+      "id": 24962,
+      "text": "Nếu quá trình thực thi một câu lệnh SQL xảy ra lỗi cú pháp. SQL Server sẽ thông báo lỗi đó bằng cách",
+      "marks": 1,
+      "answer_id": 103529,
+      "answers": [
+        {
+          "id": 103527,
+          "text": "Hiển thị đường màu xanh lượn sóng gạch chân phần câu lệnh nhập sai và hiển thị một thông báo lỗi trong Tab Message"
+        },
+        {
+          "id": 103528,
+          "text": "Hiển thị đường màu xanh lượn sóng gạch chân phần câu lệnh nhập sai và hiển thị một thông báo lỗi trong Tab Systax Error"
+        },
+        {
+          "id": 103529,
+          "text": "Hiển thị đường màu đỏ lượn sóng gạch chân phần câu lệnh nhập sai và hiển thị một thông báo lỗi trong Tab Message"
+        },
+        {
+          "id": 103530,
+          "text": "Hiển thị đường màu đỏ lượn sóng gạch chân phần câu lệnh nhập sai và hiển thị một thông báo lỗi trong Tab Systax Error"
+        }
+      ]
+    },
+    {
+      "id": 24963,
+      "text": "Các lỗi cú pháp nào sau đây thường gặp khi thực thi câu lệnh SQL A. Quên hoặc lựa chọn sai CSDL B. Viết sai tên bảng hoặc tên cột C. Viết sai từ khóa D. Bỏ sót dấu đóng ngoặc với một chuỗi ký tự.",
+      "marks": 1,
+      "answer_id": 103532,
+      "answers": [
+        {
+          "id": 103531,
+          "text": "B, C , D Đúng"
+        },
+        {
+          "id": 103532,
+          "text": "Cả A, B, C, D đều đúng"
+        },
+        {
+          "id": 103533,
+          "text": "A, D Đúng"
+        },
+        {
+          "id": 103534,
+          "text": "A, B, C Đúng"
+        }
+      ]
+    },
+    {
+      "id": 24964,
+      "text": "Thao tác nào sau đây có thể thực hiện trên lược đồ CSDL?",
+      "marks": 1,
+      "answer_id": 103537,
+      "answers": [
+        {
+          "id": 103535,
+          "text": "Định nghĩa độ rộng của cột"
+        },
+        {
+          "id": 103536,
+          "text": "Tất cả đáp án đều đúng"
+        },
+        {
+          "id": 103537,
+          "text": "Thêm cột"
+        },
+        {
+          "id": 103538,
+          "text": "Thêm dữ liệu cho một bảng CSDL"
+        }
+      ]
+    },
+    {
+      "id": 24965,
+      "text": "Khi kết nối tới CSDL SQL Server, tại hộp thoại Connect to Server của SQL Management Studio, chế độ xác thực nào sau đây người dùng phải nhập User Name và Password",
+      "marks": 1,
+      "answer_id": 103540,
+      "answers": [
+        {
+          "id": 103539,
+          "text": "Windows Authentication"
+        },
+        {
+          "id": 103540,
+          "text": "SQL Server Authentication"
+        },
+        {
+          "id": 103541,
+          "text": "Windows Authentication và SQL Server Authentication"
+        },
+        {
+          "id": 103542,
+          "text": "Tất cả đáp án đều sai"
+        }
+      ]
+    },
+    {
+      "id": 24966,
+      "text": "Nên sử dụng kiểu dữ liệu nào sau đây để lưu chuỗi với độ dài cố định hỗ trợ UNICODE",
+      "marks": 1,
+      "answer_id": 103545,
+      "answers": [
+        {
+          "id": 103543,
+          "text": "Varchar"
+        },
+        {
+          "id": 103544,
+          "text": "Char"
+        },
+        {
+          "id": 103545,
+          "text": "Nchar"
+        },
+        {
+          "id": 103546,
+          "text": "Nvarchar"
+        }
+      ]
+    },
+    {
+      "id": 24967,
+      "text": "Đâu là chú thích sử dụng trong T-SQL",
+      "marks": 1,
+      "answer_id": 103548,
+      "answers": [
+        {
+          "id": 103547,
+          "text": "*/ Chú thích dung */"
+        },
+        {
+          "id": 103548,
+          "text": "--Chú thích đúng"
+        },
+        {
+          "id": 103549,
+          "text": "/* Chú thích đúng /*"
+        },
+        {
+          "id": 103550,
+          "text": "//Chú thích đúng"
+        }
+      ]
+    },
+    {
+      "id": 24968,
+      "text": "Lựa chọn nào sau đây không phải là kiểu dữ liệu của SQL Server:",
+      "marks": 1,
+      "answer_id": 103554,
+      "answers": [
+        {
+          "id": 103551,
+          "text": "datetime2"
+        },
+        {
+          "id": 103552,
+          "text": "datetime"
+        },
+        {
+          "id": 103553,
+          "text": "numeric"
+        },
+        {
+          "id": 103554,
+          "text": "Tất cả đáp án đều sai"
+        }
+      ]
+    },
+    {
+      "id": 24969,
+      "text": "Có đoạn mã sau đây. DECLARE @a int, @b nchar(50) Đâu là câu lệnh gán giá trị cho @a và @b không gây lỗi định dạng dữ liệu",
+      "marks": 1,
+      "answer_id": 103557,
+      "answers": [
+        {
+          "id": 103555,
+          "text": "SELECT @a = 1, @b = \u0027kí tự Unicode\u0027"
+        },
+        {
+          "id": 103556,
+          "text": "SET @a = 1, @b = \u0027kí tự Unicode\u0027"
+        },
+        {
+          "id": 103557,
+          "text": "SET @a = 1, @b = N\u0027kí tự Unicode\u0027"
+        },
+        {
+          "id": 103558,
+          "text": "SELECT @a = 1, @b = N\u0027kí tự Unicode\u0027"
+        }
+      ]
+    },
+    {
+      "id": 24970,
+      "text": "Để chỉnh sửa thuộc tính của các cột trong bảng sử dụng Management Studio, Click chuột phải vào tên bảng và chọn _______",
+      "marks": 1,
+      "answer_id": 103561,
+      "answers": [
+        {
+          "id": 103559,
+          "text": "Column Modify"
+        },
+        {
+          "id": 103560,
+          "text": "Column Designer"
+        },
+        {
+          "id": 103561,
+          "text": "Design"
+        },
+        {
+          "id": 103562,
+          "text": "Table Design"
+        }
+      ]
+    },
+    {
+      "id": 24971,
+      "text": "Khi làm việc với hệ thống đa ngôn ngữ, kiểu dữ liệu nào sau đây thường được dùng để lưu trữ chuỗi",
+      "marks": 1,
+      "answer_id": 103564,
+      "answers": [
+        {
+          "id": 103563,
+          "text": "Char hoặc Varchar"
+        },
+        {
+          "id": 103564,
+          "text": "Nchar hoặc Nvarchar"
+        },
+        {
+          "id": 103565,
+          "text": "Varchar hoặc Nvarchar"
+        },
+        {
+          "id": 103566,
+          "text": "Char hoặc Nchar"
+        }
+      ]
+    },
+    {
+      "id": 24972,
+      "text": "Phát biểu nào sau đây đúng về biến bảng",
+      "marks": 1,
+      "answer_id": 103567,
+      "answers": [
+        {
+          "id": 103567,
+          "text": "Có thể sử dụng câu lệnh UPDATE với biến bảng"
+        },
+        {
+          "id": 103568,
+          "text": "Không thể sử dụng câu lệnh UPDATE và INSERT với biến bảng"
+        },
+        {
+          "id": 103569,
+          "text": "Có thể sử dụng câu lệnh mọi câu lệnh INSERT, UPDATE, DELETE… với biến bảng"
+        },
+        {
+          "id": 103570,
+          "text": "Có thể sử dụng câu lệnh SELECT INTO với biến bảng"
+        }
+      ]
+    },
+    {
+      "id": 24973,
+      "text": "SQL Server cung cấp bao nhiêu kiểu dữ liệu đơn",
+      "marks": 1,
+      "answer_id": 103572,
+      "answers": [
+        {
+          "id": 103571,
+          "text": "25"
+        },
+        {
+          "id": 103572,
+          "text": "26"
+        },
+        {
+          "id": 103573,
+          "text": "30"
+        },
+        {
+          "id": 103574,
+          "text": "20"
+        }
+      ]
+    },
+    {
+      "id": 24974,
+      "text": "Để gán giá trị cho một biến bảng. Sử dụng câu lệnh nào sau đây",
+      "marks": 1,
+      "answer_id": 103576,
+      "answers": [
+        {
+          "id": 103575,
+          "text": "Tất cả đáp án đều sai"
+        },
+        {
+          "id": 103576,
+          "text": "INSERT"
+        },
+        {
+          "id": 103577,
+          "text": "SET"
+        },
+        {
+          "id": 103578,
+          "text": "SELECT INTO"
+        }
+      ]
+    },
+    {
+      "id": 24975,
+      "text": "T- SQL hỗ trợ các loại biến nào sau đây:",
+      "marks": 1,
+      "answer_id": 103582,
+      "answers": [
+        {
+          "id": 103579,
+          "text": "Biến vô hướng"
+        },
+        {
+          "id": 103580,
+          "text": "Tất cả đáp án đều sai"
+        },
+        {
+          "id": 103581,
+          "text": "Biến bảng"
+        },
+        {
+          "id": 103582,
+          "text": "Biến vô hướng và biến bảng"
+        }
+      ]
+    },
+    {
+      "id": 24976,
+      "text": "Giả sử biến @String được khai báo như sau DECLARE @String varchar.Mã kịch bản sau trả về kết quả là SET @String = \u0027SQL Server 2008\u0027 SELECT LEN(@String)",
+      "marks": 1,
+      "answer_id": 103586,
+      "answers": [
+        {
+          "id": 103583,
+          "text": "15"
+        },
+        {
+          "id": 103584,
+          "text": "13"
+        },
+        {
+          "id": 103585,
+          "text": "Lỗi"
+        },
+        {
+          "id": 103586,
+          "text": "1"
+        }
+      ]
+    },
+    {
+      "id": 24977,
+      "text": "Cột InvoiceDate có kiểu dữ liệu SmallDatetime. Hàm CONVERT(varchar, InvoiceDate, a) trả lại kết quả cột InvoiceDate có định dạng dd-mm-yyyy. Vậy a có giá trị là bao nhiêu?",
+      "marks": 1,
+      "answer_id": 103590,
+      "answers": [
+        {
+          "id": 103587,
+          "text": "107"
+        },
+        {
+          "id": 103588,
+          "text": "101"
+        },
+        {
+          "id": 103589,
+          "text": "103"
+        },
+        {
+          "id": 103590,
+          "text": "105"
+        }
+      ]
+    },
+    {
+      "id": 24978,
+      "text": "Biểu thức sau đây thực hiện phép nhân giữa dữ liệu lưu trong cột InvoiceTotal của bảng Invoices: InvoiceTotal * .0775. Nếu cột InvoiceTotal có kiểu money thì SQL sẽ thực hiện phép chuyển đổi ngầm nào sau đây:",
+      "marks": 1,
+      "answer_id": 103593,
+      "answers": [
+        {
+          "id": 103591,
+          "text": "Tất cả đáp án đều sai"
+        },
+        {
+          "id": 103592,
+          "text": "Không thực hiện chuyển đổi ngầm"
+        },
+        {
+          "id": 103593,
+          "text": "InvoiceTotal kiểu money bị chuyển thành kiểu Decimal"
+        },
+        {
+          "id": 103594,
+          "text": "Giá trị .0775 kiểu Decimal bị chuyển thành kiểu money"
+        }
+      ]
+    },
+    {
+      "id": 24979,
+      "text": "Lệnh gán giá trị cho cột PaymentDate có kiểu SmallDatetime sau đây có thực hiện phép chuyển đổi ngầm không PaymentDate = \u00272008-08-05\u0027",
+      "marks": 1,
+      "answer_id": 103597,
+      "answers": [
+        {
+          "id": 103595,
+          "text": "Không thực hiện chuyển đổi ngầm"
+        },
+        {
+          "id": 103596,
+          "text": "Thực hiện phép chuyển đổi ngầm, giá trị chuỗi 2008-08-05 sẽ bị chuyển thành kiểu Datetime"
+        },
+        {
+          "id": 103597,
+          "text": "Thực hiện phép chuyển đổi ngầm, giá trị chuỗi 2008-08-05 sẽ bị chuyển thành kiểu SmallDatetime"
+        },
+        {
+          "id": 103598,
+          "text": "Thực hiện phép chuyển đổi ngầm, PaymentDate sẽ bị chuyển thành kiểu varchar"
+        }
+      ]
+    },
+    {
+      "id": 24980,
+      "text": "Cột InvoiceDate có kiểu dữ liệu SmallDatetime. Hàm CONVERT(varchar, InvoiceDate, 1) trả lại kết quả cột InvoiceDate có định dạng nào sau đây.",
+      "marks": 1,
+      "answer_id": 103601,
+      "answers": [
+        {
+          "id": 103599,
+          "text": "dd/mm/yyyy"
+        },
+        {
+          "id": 103600,
+          "text": "yy/dd/mm"
+        },
+        {
+          "id": 103601,
+          "text": "mm/dd/yy"
+        },
+        {
+          "id": 103602,
+          "text": "mm/dd/yyyy"
+        }
+      ]
+    },
+    {
+      "id": 24981,
+      "text": "Đoạn mã kịch bản nào sau đây thực hiện khai báo một biến và gán giá trị cho biến đó bằng 1 A. DECLARE @a int = 1 B. DECLARE @a int SET @a = 1 C. DECLARE @a int SELECT @a = 1 D. DECLARE a int SET a = 1",
+      "marks": 1,
+      "answer_id": 103603,
+      "answers": [
+        {
+          "id": 103603,
+          "text": "Chỉ A, B, C đúng"
+        },
+        {
+          "id": 103604,
+          "text": "Chỉ B đúng"
+        },
+        {
+          "id": 103605,
+          "text": "Cả A, B, C , D đều đúng"
+        },
+        {
+          "id": 103606,
+          "text": "Chỉ D đúng"
+        }
+      ]
+    },
+    {
+      "id": 24982,
+      "text": "Câu lệnh SELECT DATEDIFF(month, \u00272008-09-30\u0027, \u00272007-12-01\u0027) sau đây trả về kết quả là:",
+      "marks": 1,
+      "answer_id": 103609,
+      "answers": [
+        {
+          "id": 103607,
+          "text": "9"
+        },
+        {
+          "id": 103608,
+          "text": "304"
+        },
+        {
+          "id": 103609,
+          "text": "-9"
+        },
+        {
+          "id": 103610,
+          "text": "-304"
+        }
+      ]
+    },
+    {
+      "id": 24983,
+      "text": "Cột StartDate của bảng DateSample có kiểu dữ liệu datetime. Câu lệnh SELECT nào sau đây trả về tất cả các cột của bảng DateSample có StartDate là ngày 28-02-2012 A. SELECT * FROM DateSample WHERE StartDate = \u00272012-02-28\u0027 B. SELECT * FROM DateSample WHERE ",
+      "marks": 1,
+      "answer_id": 103612,
+      "answers": [
+        {
+          "id": 103611,
+          "text": "B, C đúng"
+        },
+        {
+          "id": 103612,
+          "text": "B, C, D đúng"
+        },
+        {
+          "id": 103613,
+          "text": "B đúng"
+        },
+        {
+          "id": 103614,
+          "text": "Cả A, B, C, D đều đúng"
+        }
+      ]
+    },
+    {
+      "id": 24984,
+      "text": "Cột InvoiceDate có kiểu dữ liệu SmallDatetime. Hàm CONVERT(varchar, InvoiceDate, a) trả lại kết quả cột InvoiceDate có định dạng dd/mm/yy. Vậy a có giá trị là bao nhiêu?",
+      "marks": 1,
+      "answer_id": 103617,
+      "answers": [
+        {
+          "id": 103615,
+          "text": "101"
+        },
+        {
+          "id": 103616,
+          "text": "2"
+        },
+        {
+          "id": 103617,
+          "text": "3"
+        },
+        {
+          "id": 103618,
+          "text": "7"
+        }
+      ]
+    },
+    {
+      "id": 24985,
+      "text": "Câu lệnh SELECT CHARINDEX(\u0027SQL\u0027, \u0027HELLO SQL Server\u0027) trả về kết quả là",
+      "marks": 1,
+      "answer_id": 103622,
+      "answers": [
+        {
+          "id": 103619,
+          "text": "6"
+        },
+        {
+          "id": 103620,
+          "text": "TRUE"
+        },
+        {
+          "id": 103621,
+          "text": "3"
+        },
+        {
+          "id": 103622,
+          "text": "7"
+        }
+      ]
+    },
+    {
+      "id": 24986,
+      "text": "Để câu lệnh ROLLBACK TRAN quay lui giao dịch đến điểm lưu trữ xác định, thực hiện như sau",
+      "marks": 1,
+      "answer_id": 103623,
+      "answers": [
+        {
+          "id": 103623,
+          "text": "Viết câu lệnh ROLLBACK TRAN kèm theo tên điểm lưu trữ"
+        },
+        {
+          "id": 103624,
+          "text": "Tạo điểm lưu trữ sử dụng câu lệnh SAVE AS"
+        },
+        {
+          "id": 103625,
+          "text": "Tạo điểm lưu trữ sử dụng câu lệnh SAVE"
+        },
+        {
+          "id": 103626,
+          "text": "Viết câu lệnh ROLL TRAN kèm theo tên điểm lưu trữ"
+        }
+      ]
+    },
+    {
+      "id": 24987,
+      "text": "Chọn đáp án ĐÚNG điền vào chỗ trống Khi không khai báo điểm bắt đầu cho một giao dịch, SQL Server coi ________ và tự động COMMIT câu lệnh lên Server. Nếu câu lệnh gây lỗi sẽ tự động ROLLBACK ĐÚNG hay SAI?",
+      "marks": 1,
+      "answer_id": 103627,
+      "answers": [
+        {
+          "id": 103627,
+          "text": "Từng câu lệnh riêng lẻ là một giao dịch"
+        },
+        {
+          "id": 103628,
+          "text": "Toàn bộ mã kịch bản là một giao dịch"
+        },
+        {
+          "id": 103629,
+          "text": "Tất cả đáp án đều sai"
+        },
+        {
+          "id": 103630,
+          "text": "Một nhóm câu lệnh là một giao dịch"
+        }
+      ]
+    },
+    {
+      "id": 24988,
+      "text": "Truyền giá trị tham số cho một Stored Procedure bằng cách nào sau đây?",
+      "marks": 1,
+      "answer_id": 103633,
+      "answers": [
+        {
+          "id": 103631,
+          "text": "Cả hai đáp án đều sai"
+        },
+        {
+          "id": 103632,
+          "text": "Truyền theo tên"
+        },
+        {
+          "id": 103633,
+          "text": "Cả hai đáp án đều đúng"
+        },
+        {
+          "id": 103634,
+          "text": "Truyền theo vị trí"
+        }
+      ]
+    },
+    {
+      "id": 24989,
+      "text": "Các trường hợp nào sau đây nên sử dụng giao dịch",
+      "marks": 1,
+      "answer_id": 103636,
+      "answers": [
+        {
+          "id": 103635,
+          "text": "Bất cứ mã kịch bản nào cũng nên sử dụng Transaction"
+        },
+        {
+          "id": 103636,
+          "text": "Khi sự thất bại của tập câu lệnh SQL nào đó sẽ vi phạm tính toàn vẹn dữ liệu"
+        },
+        {
+          "id": 103637,
+          "text": "Tất cả đáp án đều sai"
+        },
+        {
+          "id": 103638,
+          "text": "Một mã kịch bản sử dụng nhiều câu lệnh SELECT"
+        }
+      ]
+    },
+    {
+      "id": 24990,
+      "text": "Phát biểu nào sau đây ĐÚNG về hàm @@TRANCOUNT",
+      "marks": 1,
+      "answer_id": 103641,
+      "answers": [
+        {
+          "id": 103639,
+          "text": "Khi thực thi câu lệnh COMMIT TRAN, nếu @@TRANCOUNT = 0, mọi thay đổi đã được thực hiện trên CSDL trong suốt giao dịch sẽ được commit."
+        },
+        {
+          "id": 103640,
+          "text": "Khi thực thi câu lệnh COMMIT TRAN, nếu @@TRANCOUNT \u003e 1, mọi thay đổi đã được thực hiện trên CSDL trong suốt giao dịch sẽ được commit."
+        },
+        {
+          "id": 103641,
+          "text": "Khi thực thi câu lệnh COMMIT TRAN, nếu @@TRANCOUNT \u003e 1, các thay đổi sẽ không được commit. Thay vào đó @@TRANCOUNT giảm đi 1."
+        },
+        {
+          "id": 103642,
+          "text": "Tất cả đáp án đều sai"
+        }
+      ]
+    },
+    {
+      "id": 24991,
+      "text": "Nên sử dụng giao dịch trong trường hợp nào sau đây?",
+      "marks": 1,
+      "answer_id": 103644,
+      "answers": [
+        {
+          "id": 103643,
+          "text": "Khi viết mã hai hay nhiều trigger"
+        },
+        {
+          "id": 103644,
+          "text": "Khi cập nhật tham chiếu khóa ngoại"
+        },
+        {
+          "id": 103645,
+          "text": "Khi chuyển hàng từ cột này sang cột khác"
+        },
+        {
+          "id": 103646,
+          "text": "Khi sự thất bại của tập câu lệnh SQL nào đó sẽ vi phạm function"
+        }
+      ]
+    },
+    {
+      "id": 24992,
+      "text": "Phát biểu nào sau đây đúng về Stored Procedure sau: CREATE PROC spParameters @a int = 0, @b int OUT, @String Nvarchar(50) = \u0027%\u0027 AS",
+      "marks": 1,
+      "answer_id": 103650,
+      "answers": [
+        {
+          "id": 103647,
+          "text": "Giá trị của tham số @a và @String luôn luôn là 0 và %"
+        },
+        {
+          "id": 103648,
+          "text": "Lời gọi Stored Procedure này không cần truyền giá trị cho các tham số @a, @String, @b"
+        },
+        {
+          "id": 103649,
+          "text": "Tất cả đáp án đều sai"
+        },
+        {
+          "id": 103650,
+          "text": "@a và @String là tham số đầu vào tùy chọn, @b là tham số đầu ra"
+        }
+      ]
+    },
+    {
+      "id": 24993,
+      "text": "Chọn phát biểu ĐÚNG?",
+      "marks": 1,
+      "answer_id": 103651,
+      "answers": [
+        {
+          "id": 103651,
+          "text": "Để khai báo điểm bắt đầu của một giao dịch có thể sử dụng từ khóa BEGIN TRAN hoặc BEGIN TRANSACTION"
+        },
+        {
+          "id": 103652,
+          "text": "Bắt buộc phải viết từ khóa TRAN khi viết câu lệnh BEGIN, COMMIT hoặc ROLLBACK."
+        },
+        {
+          "id": 103653,
+          "text": "Câu lệnh ROLLBACK chỉ sử dụng để quay lui về thời điểm bắt đầu giao dịch"
+        },
+        {
+          "id": 103654,
+          "text": "Tất cả phát biểu đều sai"
+        }
+      ]
+    },
+    {
+      "id": 24994,
+      "text": "Đâu là phát biểu đúng về Stored Procedure",
+      "marks": 1,
+      "answer_id": 103658,
+      "answers": [
+        {
+          "id": 103655,
+          "text": "Một Stored Procedure không có tham số đầu ra"
+        },
+        {
+          "id": 103656,
+          "text": "Một Stored Procedure có thể chứ nhiều nhóm câu lệnh (Batch)"
+        },
+        {
+          "id": 103657,
+          "text": "Một Stored Procedure không có tham số đầu vào"
+        },
+        {
+          "id": 103658,
+          "text": "Stored Procedure là một tập các câu lệnh T-SQL thực hiện một nhiệm vụ cụ thể, được đặt tên và lưu trữ trong CSDL dưới dạng đã biên dịch."
+        }
+      ]
+    },
+    {
+      "id": 24995,
+      "text": "Mã kịch bản sau sẽ làm gì khi được thực thi IF OBJECT_ID(\u0027spCopyInvoices\u0027) IS NOT NULL DROP PROC spCopyInvoices CREATE PROC spCopyInvoices AS SELECT * INTO InvoiceCopy FROM Invoices",
+      "marks": 1,
+      "answer_id": 103660,
+      "answers": [
+        {
+          "id": 103659,
+          "text": "Tất cả đáp án đều sai"
+        },
+        {
+          "id": 103660,
+          "text": "Xóa spCopyInvoices nếu Stored Procedure này đã tồn tại và tạo spCopyInvoices mới"
+        },
+        {
+          "id": 103661,
+          "text": "Xóa spCopyInvoices nếu Stored Procedure này đã tồn tại nhưng không tạo spCopyInvoices mới"
+        },
+        {
+          "id": 103662,
+          "text": "Lỗi cú pháp"
+        }
+      ]
+    },
+    {
+      "id": 24996,
+      "text": "Phát biều nào sau đây đúng về tên cột của một VIEW A. Trong mọi trường hợp, có thể không đặt tên các cột của VIEW trong câu lệnh CRETE VIEW. B. Cột chứa giá trị được tính toán từ nhiều cột khác phải được đặt tên. C. Nếu cột không được đặt tên, tên cột sẽ ",
+      "marks": 1,
+      "answer_id": 103663,
+      "answers": [
+        {
+          "id": 103663,
+          "text": "B, C Đúng"
+        },
+        {
+          "id": 103664,
+          "text": "C, D Đúng"
+        },
+        {
+          "id": 103665,
+          "text": "D, A Đúng"
+        },
+        {
+          "id": 103666,
+          "text": "A, B Đúng"
+        }
+      ]
+    },
+    {
+      "id": 24997,
+      "text": "Câu lệnh nào sau đây thực hiện xóa View Vendors_SW",
+      "marks": 1,
+      "answer_id": 103668,
+      "answers": [
+        {
+          "id": 103667,
+          "text": "DROP \u0027Vendors_SW\u0027"
+        },
+        {
+          "id": 103668,
+          "text": "DROP VIEW Vendors_SW"
+        },
+        {
+          "id": 103669,
+          "text": "DROP VIEW \u0027Vendors_SW\u0027"
+        },
+        {
+          "id": 103670,
+          "text": "DROP Vendors_SW"
+        }
+      ]
+    },
+    {
+      "id": 24998,
+      "text": "Mã kịch bản nào sau đây khai báo thành công một hàm tính tổng hai số",
+      "marks": 1,
+      "answer_id": 103671,
+      "answers": [
+        {
+          "id": 103671,
+          "text": "CREATE FUNCTION fnTonghaiso( @a int = 0, @b int = 0) RETURNS int BEGIN RETURN (@a+@b)END"
+        },
+        {
+          "id": 103672,
+          "text": "CREATE FUNCTION fnTonghaiso( @a int = 0, @b int = 0) RETURN int BEGIN RETURN (@a+@b)END"
+        },
+        {
+          "id": 103673,
+          "text": "CREATE FUNCTION fnTonghaiso @a int = 0, @b int = 0 RETURN int BEGIN RETURN (@a+@b)END"
+        },
+        {
+          "id": 103674,
+          "text": "Tất cả đáp án đều sai"
+        }
+      ]
+    },
+    {
+      "id": 24999,
+      "text": "Để chỉnh sửa một VIEW sử dụng chế độ đồ họa View Designer của Management Studio, Click chuột phải vào tên View trong cửa sổ Objects Explorer chọn ___________",
+      "marks": 1,
+      "answer_id": 103676,
+      "answers": [
+        {
+          "id": 103675,
+          "text": "View Modifier"
+        },
+        {
+          "id": 103676,
+          "text": "Design"
+        },
+        {
+          "id": 103677,
+          "text": "View Designer"
+        },
+        {
+          "id": 103678,
+          "text": "Modify"
+        }
+      ]
+    },
+    {
+      "id": 25000,
+      "text": "Có mấy loại hàm người dùng định nghĩa",
+      "marks": 1,
+      "answer_id": 103681,
+      "answers": [
+        {
+          "id": 103679,
+          "text": "2"
+        },
+        {
+          "id": 103680,
+          "text": "1"
+        },
+        {
+          "id": 103681,
+          "text": "3"
+        },
+        {
+          "id": 103682,
+          "text": "4"
+        }
+      ]
+    },
+    {
+      "id": 25001,
+      "text": "Phát biểu nào ĐÚNG về đoạn mã sau: CREATE VIEW VendorsDESC AS SELECT VendorID, VendorName FROM vendors ORDER BY VendorName DESC",
+      "marks": 1,
+      "answer_id": 103683,
+      "answers": [
+        {
+          "id": 103683,
+          "text": "Xảy ra lỗi khi thực thi đoạn mã này"
+        },
+        {
+          "id": 103684,
+          "text": "View được tạo ra bởi đoạn mã này là View có thể cập nhật"
+        },
+        {
+          "id": 103685,
+          "text": "View được tạo ra bởi đoạn mã này là View chỉ đọc"
+        },
+        {
+          "id": 103686,
+          "text": "Tất cả đáp án đều sai"
+        }
+      ]
+    },
+    {
+      "id": 25002,
+      "text": "Phát biểu nào ĐÚNG về đoạn mã dưới đây? CREATE VIEW OutstandingInvoices AS SELECT InvoiceNumber, InvoiceDate, InvoiceTotal, InvoiceTotal - PaymentTotal – CreditTotal AS BalanceDue FROM Invoices WHERE InvoiceTotal - PaymentTotal - CreditTotal \u003e 0",
+      "marks": 1,
+      "answer_id": 103689,
+      "answers": [
+        {
+          "id": 103687,
+          "text": "Tất cả đáp án đều sai"
+        },
+        {
+          "id": 103688,
+          "text": "View tạo ra bởi đoạn mã này là View có thể cập nhật"
+        },
+        {
+          "id": 103689,
+          "text": "View tạo ra bởi đoạn mã này là View chỉ đọc"
+        },
+        {
+          "id": 103690,
+          "text": "Xảy ra lỗi cú pháp khi thực thi đoạn mã"
+        }
+      ]
+    },
+    {
+      "id": 25003,
+      "text": "Phát biểu nào sau đây đúng về VIEW?",
+      "marks": 1,
+      "answer_id": 103694,
+      "answers": [
+        {
+          "id": 103691,
+          "text": "Một View chỉ có thể truy xuất dữ liệu từ một bảng trong CSDL"
+        },
+        {
+          "id": 103692,
+          "text": "Có thể tạo một View trùng tên với tên một bảng đã tồn tại"
+        },
+        {
+          "id": 103693,
+          "text": "Tất cả đáp án đều sai"
+        },
+        {
+          "id": 103694,
+          "text": "Sử dụng View có thể che dấu và bảo mật dữ liệu"
+        }
+      ]
+    },
+    {
+      "id": 25004,
+      "text": "Một hàm người dùng định nghĩa có thể trả về giá trị nào sau đây",
+      "marks": 1,
+      "answer_id": 103696,
+      "answers": [
+        {
+          "id": 103695,
+          "text": "Một bảng dữ liệu"
+        },
+        {
+          "id": 103696,
+          "text": "Tất cả đáp án đều đúng"
+        },
+        {
+          "id": 103697,
+          "text": "Giá trị kiểu int"
+        },
+        {
+          "id": 103698,
+          "text": "Giá trị kiểu char"
+        }
+      ]
+    },
+    {
+      "id": 25005,
+      "text": "Để trả về giá trị cho một hàm người dùng định nghĩa, có thể sử dụng cách nào sau đây?",
+      "marks": 1,
+      "answer_id": 103699,
+      "answers": [
+        {
+          "id": 103699,
+          "text": "Sử dụng câu lệnh RETURN"
+        },
+        {
+          "id": 103700,
+          "text": "Sử dụng tham số đầu ra"
+        },
+        {
+          "id": 103701,
+          "text": "Tất cả đáp án đều sai"
+        },
+        {
+          "id": 103702,
+          "text": "Sử dụng tham số đầu ra hoặc câu lệnh RETURN"
+        }
+      ]
+    },
+    {
+      "id": 25006,
+      "text": "Phát biểu nào sau đây ĐÚNG:",
+      "marks": 1,
+      "answer_id": 103705,
+      "answers": [
+        {
+          "id": 103703,
+          "text": "Câu lệnh tạo Login ID sử dụng tùy chọn DEFAULT_DATABASE để thiết lập CSDL mặc định cho Login ID phải được thực thi trong ngữ cảnh CSDL mặc định đó"
+        },
+        {
+          "id": 103704,
+          "text": "Mỗi CSDL duy trì một danh sách Login ID của riêng CSDL đó."
+        },
+        {
+          "id": 103705,
+          "text": "Để tạo database user cho một CSDL cụ thể, câu lệnh CREATE USER phải được thực thi trong ngữ cảnh CSDL đó"
+        },
+        {
+          "id": 103706,
+          "text": "Mỗi Login ID chỉ tạo được một database User"
+        }
+      ]
+    },
+    {
+      "id": 25007,
+      "text": "Lựa chọn nào sau đây là vai trò CSDL mặc định",
+      "marks": 1,
+      "answer_id": 103710,
+      "answers": [
+        {
+          "id": 103707,
+          "text": "dbcreator"
+        },
+        {
+          "id": 103708,
+          "text": "DbDatawriter"
+        },
+        {
+          "id": 103709,
+          "text": "DbOwner"
+        },
+        {
+          "id": 103710,
+          "text": "Tất cả đáp án đều sai"
+        }
+      ]
+    },
+    {
+      "id": 25008,
+      "text": "Chế độ xác thực nào sau đây phải nhập UserName và Password khi đăng nhập SQL Server",
+      "marks": 1,
+      "answer_id": 103711,
+      "answers": [
+        {
+          "id": 103711,
+          "text": "SQL Server Authentication"
+        },
+        {
+          "id": 103712,
+          "text": "Windows Authenticaion"
+        },
+        {
+          "id": 103713,
+          "text": "Tất cả đáp án đều sai"
+        },
+        {
+          "id": 103714,
+          "text": "Mixed Mode"
+        }
+      ]
+    },
+    {
+      "id": 25009,
+      "text": "Sau khi tạo một Database User cho một CSDL thì người dùng có thể thực hiện các quyền nào sau đây?",
+      "marks": 1,
+      "answer_id": 103716,
+      "answers": [
+        {
+          "id": 103715,
+          "text": "Thêm một bảng vào CSDL"
+        },
+        {
+          "id": 103716,
+          "text": "Chọn CSDL trên combo box chọn ngữ cảnh CSDL"
+        },
+        {
+          "id": 103717,
+          "text": "Xóa một bảng trong CSDL"
+        },
+        {
+          "id": 103718,
+          "text": "Truy vấn một bảng trong một CSDL trên Server"
+        }
+      ]
+    },
+    {
+      "id": 25010,
+      "text": "Quyền SELECT có thể tác động lên các đối tượng nào dưới đây:",
+      "marks": 1,
+      "answer_id": 103719,
+      "answers": [
+        {
+          "id": 103719,
+          "text": "Tất cả đáp án đều đúng"
+        },
+        {
+          "id": 103720,
+          "text": "View"
+        },
+        {
+          "id": 103721,
+          "text": "Hàm giá trị bảng"
+        },
+        {
+          "id": 103722,
+          "text": "Bảng"
+        }
+      ]
+    },
+    {
+      "id": 25011,
+      "text": "Đoạn mã kịch bản nào sau đây thực thi thành công:",
+      "marks": 1,
+      "answer_id": 103723,
+      "answers": [
+        {
+          "id": 103723,
+          "text": "CREATE LOGIN JohnDoe WITH PASSWORD = \u0027pt8806FG$B\u0027, DEFAULT_DATABASE = AP USE APCREATE USER JohnDoe FOR LOGIN JohnDoe"
+        },
+        {
+          "id": 103724,
+          "text": "CREATE LOGIN ID JohnDoe WITH PASSWORD = \u0027pt8806FG$B\u0027, DEFAULT_DATABASE = AP USE APCREATE USER JohnDoe"
+        },
+        {
+          "id": 103725,
+          "text": "CREATE LOGIN ID JohnDoe WITH PASSWORD = \u0027pt8806FG$B\u0027, DEFAULT_DATABASE = AP USE APCREATE USER JohnDoe FOR LOGIN ID JohnDoe"
+        },
+        {
+          "id": 103726,
+          "text": "CREATE LOGIN JohnDoe WITH PASSWORD = \u0027pt8806FG$B\u0027, DEFAULT_DATABASE = AP USE APCREATE DATABASE USER JohnDoe FOR LOGIN JohnDoe"
+        }
+      ]
+    },
+    {
+      "id": 25012,
+      "text": "Quyền EXECUTE có thể tác động lên các đối tượng nào sau đây:",
+      "marks": 1,
+      "answer_id": 103727,
+      "answers": [
+        {
+          "id": 103727,
+          "text": "Stored Procedure"
+        },
+        {
+          "id": 103728,
+          "text": "Bảng"
+        },
+        {
+          "id": 103729,
+          "text": "Tất cả các đối tượng CSDL"
+        },
+        {
+          "id": 103730,
+          "text": "View"
+        }
+      ]
+    },
+    {
+      "id": 25013,
+      "text": "Vai trò dbcreator có thể thực hiện các thao tác nào sau đây?",
+      "marks": 1,
+      "answer_id": 103733,
+      "answers": [
+        {
+          "id": 103731,
+          "text": "Phục hồi một CSDL"
+        },
+        {
+          "id": 103732,
+          "text": "Truy vấn các bảng trong một CSDL do người dùng tạo trên server"
+        },
+        {
+          "id": 103733,
+          "text": "Tạo một bảng mới trên một CSDL, do người dùng tạo trên server"
+        },
+        {
+          "id": 103734,
+          "text": "Tất cả đáp án đều đúng"
+        }
+      ]
+    },
+    {
+      "id": 25014,
+      "text": "Password của một SQL Login ID phải thỏa mãn điều kiện nào sau đây để có tính bảo mật cao?",
+      "marks": 1,
+      "answer_id": 103735,
+      "answers": [
+        {
+          "id": 103735,
+          "text": "Tất cả đáp án đều đúng"
+        },
+        {
+          "id": 103736,
+          "text": "Không sử dụng các giá trị \"sysadmin\", \"sa\", \"administrator\""
+        },
+        {
+          "id": 103737,
+          "text": "Không sử dụng tên máy hoặc tên người dùng hiện thời"
+        },
+        {
+          "id": 103738,
+          "text": "Phải chứa ít nhất ba trong số các kí tự sau: chữ cái viết hoa, chữ cái viết thường, kí tự số, các kí tự đặc biệt (#, %, $...)"
+        }
+      ]
+    },
+    {
+      "id": 25015,
+      "text": "Lựa chọn đáp án đúng? SQL Server dựa vào _________cấp cho người dùng/nhóm người dùng để xác định các đối tượng, câu lệnh SQL… người đùng được phép tác động trên CSDL",
+      "marks": 1,
+      "answer_id": 103742,
+      "answers": [
+        {
+          "id": 103739,
+          "text": "Quyền"
+        },
+        {
+          "id": 103740,
+          "text": "Tất cả đáp án đều sai"
+        },
+        {
+          "id": 103741,
+          "text": "Vai trò"
+        },
+        {
+          "id": 103742,
+          "text": "Quyền và vai trò"
+        }
+      ]
+    },
+    {
+      "id": 25016,
+      "text": "Invoices là tên một bảng trong CSDL. Câu lệnh sp_Help \u0027Invoices\u0027 trả về___________",
+      "marks": 1,
+      "answer_id": 103743,
+      "answers": [
+        {
+          "id": 103743,
+          "text": "Câu lệnh tạo bảng Invoices"
+        },
+        {
+          "id": 103744,
+          "text": "Tất cả các thông tin liên quan đến bảng Invoices bao gồm thông tin các cột của bảng, indexes, ràng buộc, khóa ngoại."
+        },
+        {
+          "id": 103745,
+          "text": "Cả A, B, C đều sai"
+        },
+        {
+          "id": 103746,
+          "text": "Tất cả các thông tin liên quan đến bảng Invoices bao gồm thông tin các cột của bảng, indexes, ràng buộc, khóa ngoại, các Stored Procedure, View, Trigger tham chiếu đến bảng."
+        }
+      ]
+    },
+    {
+      "id": 25017,
+      "text": "System Stored Procedure nào sau đây đùng để xem danh sách các Stored Procedure, View mà tham chiếu đến bảng Invoices trong CSDL?",
+      "marks": 1,
+      "answer_id": 103750,
+      "answers": [
+        {
+          "id": 103747,
+          "text": "sp_help Invoices"
+        },
+        {
+          "id": 103748,
+          "text": "sp_relationship Invoices"
+        },
+        {
+          "id": 103749,
+          "text": "Tất cả đáp án đều sai"
+        },
+        {
+          "id": 103750,
+          "text": "sp_depends Invoices"
+        }
+      ]
+    },
+    {
+      "id": 25018,
+      "text": "Người dùng phải đăng nhạp bằng Login ID có vai trò nào sau đây, để có thể tạo lịch sao lưu tự động cho một CSDL?",
+      "marks": 1,
+      "answer_id": 103751,
+      "answers": [
+        {
+          "id": 103751,
+          "text": "sysadmin"
+        },
+        {
+          "id": 103752,
+          "text": "db_owner"
+        },
+        {
+          "id": 103753,
+          "text": "admin"
+        },
+        {
+          "id": 103754,
+          "text": "dbcreator"
+        }
+      ]
+    },
+    {
+      "id": 25019,
+      "text": "Tùy chọn chế độ sao lưu nào sau đây có thể tạo ra nhiều bản sao CSDL, được lưu trong cùng một File .bak?",
+      "marks": 1,
+      "answer_id": 103758,
+      "answers": [
+        {
+          "id": 103755,
+          "text": "Duplicate"
+        },
+        {
+          "id": 103756,
+          "text": "Overwrite all existing backup sets"
+        },
+        {
+          "id": 103757,
+          "text": "Multiple copies"
+        },
+        {
+          "id": 103758,
+          "text": "Append to the existing backup set"
+        }
+      ]
+    },
+    {
+      "id": 25020,
+      "text": "Để tạo lịch sao lưu CSDL tự động trong SQL Server 2008, nhấn chuột phải vào Maintenance Plans trong thư mục Management trên cửa sổ Solution Explorer, chọn ________",
+      "marks": 1,
+      "answer_id": 103759,
+      "answers": [
+        {
+          "id": 103759,
+          "text": "New Maintenance Plan"
+        },
+        {
+          "id": 103760,
+          "text": "Tất cả đáp án đều sai"
+        },
+        {
+          "id": 103761,
+          "text": "New backup Schedule"
+        },
+        {
+          "id": 103762,
+          "text": "New backup plan"
+        }
+      ]
+    },
+    {
+      "id": 25021,
+      "text": "Phát biểu nào sau đây ĐÚNG?",
+      "marks": 1,
+      "answer_id": 103764,
+      "answers": [
+        {
+          "id": 103763,
+          "text": "Kiểu sao lưu Full backup tốn ít dung lượng bộ nhớ hơn kiểu sao lưu Differential backup"
+        },
+        {
+          "id": 103764,
+          "text": "Kiểu sao lưu Differential backup chỉ sao lưu các dữ liệu mới được cập nhật (thay đổi) kể từ lần full backup trước đó"
+        },
+        {
+          "id": 103765,
+          "text": "Kiểu sao lưu Differential backup sao lưu toàn bộ dữ liệu trong CSDL cùng với bản ghi transaction log ghi nhận các thao tác được thực hiện từ lần sao lưu Full backup gần nhất"
+        },
+        {
+          "id": 103766,
+          "text": "Tất cả đáp án đều sai"
+        }
+      ]
+    },
+    {
+      "id": 25022,
+      "text": "Để thực hiện phục hồi CSDL từ một bản sao Full backup và sau đó tiếp tục phục hồi CSDL sử dụng bản sao Differential backup, ở mục recovery state của trang option trong hộp thoại Restore database của lần phục hồi từ bản sao Full backup phải chọn radio butt",
+      "marks": 1,
+      "answer_id": 103769,
+      "answers": [
+        {
+          "id": 103767,
+          "text": "radio button thứ ba"
+        },
+        {
+          "id": 103768,
+          "text": "radio button thứ nhất"
+        },
+        {
+          "id": 103769,
+          "text": "radio button thứ hai"
+        },
+        {
+          "id": 103770,
+          "text": "Tất cả đáp án đều sai"
+        }
+      ]
+    },
+    {
+      "id": 25023,
+      "text": "Các cấu hình thường phải thực hiện cho một Back Up Database Task trong hộp thoại Back Up Database Task là:A. Ấn định thời gian thực hiện sao lưu CSDLB. Chọn kiểu sao lưu CSDL trong mục Database(s)C. Chọn đường dẫn lưu bản sao CSDL",
+      "marks": 1,
+      "answer_id": 103773,
+      "answers": [
+        {
+          "id": 103771,
+          "text": "A, B đúng"
+        },
+        {
+          "id": 103772,
+          "text": "Tất cả đáp án đều đúng"
+        },
+        {
+          "id": 103773,
+          "text": "A, C đúng"
+        },
+        {
+          "id": 103774,
+          "text": "B, C đúng"
+        }
+      ]
+    },
+    {
+      "id": 25024,
+      "text": "Lựa chọn nào sau đây là một system stored procedure?",
+      "marks": 1,
+      "answer_id": 103777,
+      "answers": [
+        {
+          "id": 103775,
+          "text": "sp_who"
+        },
+        {
+          "id": 103776,
+          "text": "sp_column"
+        },
+        {
+          "id": 103777,
+          "text": "sp_table"
+        },
+        {
+          "id": 103778,
+          "text": "sp_relationship"
+        }
+      ]
+    },
+    {
+      "id": 25025,
+      "text": "File sử dụng để phục hồi cơ sở dữ liệu có phần mở rộng làA. MdfB. bakC. LdfD. Sử dụng cả ba loại file trên",
+      "marks": 1,
+      "answer_id": 103779,
+      "answers": [
+        {
+          "id": 103779,
+          "text": "B Đúng"
+        },
+        {
+          "id": 103780,
+          "text": "A Đúng"
+        },
+        {
+          "id": 103781,
+          "text": "D Đúng"
+        },
+        {
+          "id": 103782,
+          "text": "C Đúng"
         }
       ]
     }
@@ -34158,1067 +35829,6 @@
   "histo": [
     {
       "id": 0
-    },
-    {
-      "idUser": "1",
-      "idSubject": "adav",
-      "histo": [
-        {
-          "id": 25106,
-          "text": "Có mấy loại Service?",
-          "marks": 1,
-          "answer_id": 104121,
-          "answers": [
-            {
-              "id": 104118,
-              "text": "3"
-            },
-            {
-              "id": 104119,
-              "text": "4"
-            },
-            {
-              "id": 104120,
-              "text": "1"
-            },
-            {
-              "id": 104121,
-              "text": "2"
-            }
-          ],
-          "pick_answer_id": 104118
-        },
-        {
-          "id": 25107,
-          "text": "Trong IntentService, phương thức onHandlerIntent sẽ được tự động gọi trong phương thức nào?",
-          "marks": 1,
-          "answer_id": 104124,
-          "answers": [
-            {
-              "id": 104122,
-              "text": "onServiceConnected()"
-            },
-            {
-              "id": 104123,
-              "text": "onServiceDisConnected()"
-            },
-            {
-              "id": 104124,
-              "text": "onStartCommand()"
-            },
-            {
-              "id": 104125,
-              "text": "onBind()"
-            }
-          ],
-          "pick_answer_id": 104124
-        },
-        {
-          "id": 25108,
-          "text": "Khi nào phương thức ServiceConnection.onServiceConnected được gọi?",
-          "marks": 1,
-          "answer_id": 104126,
-          "answers": [
-            {
-              "id": 104126,
-              "text": "Sau khi một thành phần gọi Context.startService()"
-            },
-            {
-              "id": 104127,
-              "text": "Sau khi một thành phần gọi Context.bindService()"
-            },
-            {
-              "id": 104128,
-              "text": "Sau khi BroadcastReceiver nhận một Intent được gửi bởi Service"
-            },
-            {
-              "id": 104129,
-              "text": "Khi một Service gọi Context.startActivity()"
-            }
-          ],
-          "pick_answer_id": 104126
-        },
-        {
-          "id": 25109,
-          "text": "Phương thức Service.stopSelf(int startId) có tham số kiểu int. Tham số này dùng để làm gì?",
-          "marks": 1,
-          "answer_id": 104132,
-          "answers": [
-            {
-              "id": 104130,
-              "text": "Nếu startId khác 0, Service sẽ bị hủy một cách vô điều kiện"
-            },
-            {
-              "id": 104131,
-              "text": "Tham số miêu tả số miliseconds bị trì hoãn trước khi Service bị hủy"
-            },
-            {
-              "id": 104132,
-              "text": "Là start identifier gần nhất nhận được bởi lời gọi onStart(Intent, int)"
-            },
-            {
-              "id": 104133,
-              "text": "Được sử dụng để dừng Service nếu Service đang chạy trong process id với process id bằng giá trị startid"
-            }
-          ],
-          "pick_answer_id": 104131
-        }
-      ],
-      "start": "2021-04-18T16:33:42.192Z",
-      "end": "2021-04-18T16:33:54.790Z",
-      "id": 1
-    },
-    {
-      "idUser": "1",
-      "idSubject": "adte",
-      "histo": [
-        {
-          "id": 25262,
-          "text": "Kiểm thử nào không nằm trong kiểm thử hệ thống?",
-          "marks": 1,
-          "answer_id": 104715,
-          "answers": [
-            {
-              "id": 104712,
-              "text": "Installation tests"
-            },
-            {
-              "id": 104713,
-              "text": "Performance tests"
-            },
-            {
-              "id": 104714,
-              "text": "GUI tests"
-            },
-            {
-              "id": 104715,
-              "text": "Unit test"
-            }
-          ],
-          "pick_answer_id": 104713
-        },
-        {
-          "id": 25263,
-          "text": "Kiểm thử nào được sử dụng để kiểm thử hoạt động của các thành phần khi chúng làm việc chung với nhau?",
-          "marks": 1,
-          "answer_id": 104717,
-          "answers": [
-            {
-              "id": 104716,
-              "text": "Kiểm thử đơn vị"
-            },
-            {
-              "id": 104717,
-              "text": "Kiểm thử tích hợp"
-            },
-            {
-              "id": 104718,
-              "text": "Kiểm thử chấp nhận"
-            },
-            {
-              "id": 104719,
-              "text": "Kiểm thử giao diện"
-            }
-          ],
-          "pick_answer_id": 104719
-        },
-        {
-          "id": 25264,
-          "text": "Android sử dụng Framework nào để kiểm thử đơn vị?",
-          "marks": 1,
-          "answer_id": 104720,
-          "answers": [
-            {
-              "id": 104720,
-              "text": "JUnit"
-            },
-            {
-              "id": 104721,
-              "text": "FUnit"
-            },
-            {
-              "id": 104722,
-              "text": "NUnit"
-            },
-            {
-              "id": 104723,
-              "text": "AUnit"
-            }
-          ],
-          "pick_answer_id": 104722
-        },
-        {
-          "id": 25265,
-          "text": "Trong JUnit, phương thức nào được sử dụng để kiểm tra một giá trị có phải Null hay không?",
-          "marks": 1,
-          "answer_id": 104727,
-          "answers": [
-            {
-              "id": 104724,
-              "text": "confirmNull"
-            },
-            {
-              "id": 104725,
-              "text": "assertNulls"
-            },
-            {
-              "id": 104726,
-              "text": "confirmNulls"
-            },
-            {
-              "id": 104727,
-              "text": "assertNull"
-            }
-          ],
-          "pick_answer_id": 104724
-        }
-      ],
-      "start": "2021-04-18T16:46:33.954Z",
-      "end": "2021-04-18T16:46:41.420Z",
-      "id": 2
-    },
-    {
-      "idUser": "1",
-      "idSubject": "adav",
-      "histo": [
-        {
-          "id": 25106,
-          "text": "Có mấy loại Service?",
-          "marks": 1,
-          "answer_id": 104121,
-          "answers": [
-            {
-              "id": 104118,
-              "text": "3"
-            },
-            {
-              "id": 104119,
-              "text": "4"
-            },
-            {
-              "id": 104120,
-              "text": "1"
-            },
-            {
-              "id": 104121,
-              "text": "2"
-            }
-          ],
-          "pick_answer_id": 104120
-        }
-      ],
-      "start": "2021-04-18T16:46:53.800Z",
-      "end": "2021-04-18T16:46:56.161Z",
-      "id": 3
-    },
-    {
-      "idUser": "1",
-      "idSubject": "jaav",
-      "histo": [
-        {
-          "id": 26120,
-          "text": "Package nào chứa các class kiểu dữ liệu",
-          "marks": 1,
-          "answer_id": 108224,
-          "answers": [
-            {
-              "id": 108224,
-              "text": "java.lang"
-            },
-            {
-              "id": 108225,
-              "text": "java.io"
-            },
-            {
-              "id": 108226,
-              "text": "java.ouput"
-            },
-            {
-              "id": 108227,
-              "text": "java.swing"
-            },
-            {
-              "id": 108228,
-              "text": "java.util"
-            },
-            {
-              "id": 108229,
-              "text": "java.input"
-            }
-          ],
-          "pick_answer_id": 108225
-        },
-        {
-          "id": 26121,
-          "text": "Trong file MyCode.java chứa đoạn code sau: public class MyClass{}public interface MyInterface{}Mô tả nào đúng với đoạn code này trong file MyCode?",
-          "marks": 1,
-          "answer_id": 108230,
-          "answers": [
-            {
-              "id": 108230,
-              "text": "Đoạn code trên không có phương thức main()"
-            },
-            {
-              "id": 108231,
-              "text": "MyClass phải kế thừa từ MyInterface"
-            },
-            {
-              "id": 108232,
-              "text": "Không thể có một public class hoặc interface có cùng tên trong file code Java này."
-            },
-            {
-              "id": 108233,
-              "text": "MyClass phải thực thi MyInterface"
-            },
-            {
-              "id": 108234,
-              "text": "Phải có một public class hoặc interface có tên là MyCode"
-            },
-            {
-              "id": 108235,
-              "text": "Phải có nhiều public class hoặc interface có tên là MyCode"
-            }
-          ],
-          "pick_answer_id": 108234
-        },
-        {
-          "id": 26122,
-          "text": "Trong Java, 5/2 có kết quả là:",
-          "marks": 1,
-          "answer_id": 108240,
-          "answers": [
-            {
-              "id": 108236,
-              "text": "0"
-            },
-            {
-              "id": 108237,
-              "text": "Có lỗi"
-            },
-            {
-              "id": 108238,
-              "text": "3"
-            },
-            {
-              "id": 108239,
-              "text": "2.5"
-            },
-            {
-              "id": 108240,
-              "text": "2"
-            }
-          ],
-          "pick_answer_id": 108240
-        },
-        {
-          "id": 26123,
-          "text": "Trong một package, đối với một thành phần (member) khi không khai báo từ khóa private, public, protected thì quyền truy cập đối với thành phần đó là",
-          "marks": 1,
-          "answer_id": 108244,
-          "answers": [
-            {
-              "id": 108241,
-              "text": "Có thể truy cập bởi các class bên ngoài package."
-            },
-            {
-              "id": 108242,
-              "text": "Chỉ có thể truy cập trong cùng một class."
-            },
-            {
-              "id": 108243,
-              "text": "Có thể truy cập bởi các class kế thừa từ class này."
-            },
-            {
-              "id": 108244,
-              "text": "Có thể truy cập bởi các class trong cùng một package."
-            },
-            {
-              "id": 108245,
-              "text": "Có thể truy cập bởi các class là super của class này."
-            }
-          ],
-          "pick_answer_id": 108244
-        },
-        {
-          "id": 26124,
-          "text": "Chọn câu trả lời đúng:interface chứa các method là",
-          "marks": 1,
-          "answer_id": 108248,
-          "answers": [
-            {
-              "id": 108246,
-              "text": "Các method là final"
-            },
-            {
-              "id": 108247,
-              "text": "Các method protected"
-            },
-            {
-              "id": 108248,
-              "text": "Tất cả các method abstract"
-            },
-            {
-              "id": 108249,
-              "text": "Các method là public"
-            },
-            {
-              "id": 108250,
-              "text": "Các method là private"
-            },
-            {
-              "id": 108251,
-              "text": "Một số method là abstract"
-            }
-          ],
-          "pick_answer_id": 108249
-        },
-        {
-          "id": 26125,
-          "text": "Đoạn code này có lỗi không?import java.util.*;package myPackage;class MyClass extends MyInterface {} interface MyInterface {}",
-          "marks": 1,
-          "answer_id": 108256,
-          "answers": [
-            {
-              "id": 108252,
-              "text": "Interface MyInterface có thể kế thừa"
-            },
-            {
-              "id": 108253,
-              "text": "Không có lỗi"
-            },
-            {
-              "id": 108254,
-              "text": "Dòng import.java.util.* sai cú pháp"
-            },
-            {
-              "id": 108255,
-              "text": "class MyClass phải được khai báo là public"
-            },
-            {
-              "id": 108256,
-              "text": "Interface MyInterface không thể kế thừa"
-            }
-          ],
-          "pick_answer_id": 108256
-        },
-        {
-          "id": 26126,
-          "text": "Package nào được dùng để trình bày giao diện đồ họa?",
-          "marks": 1,
-          "answer_id": 108262,
-          "answers": [
-            {
-              "id": 108257,
-              "text": "java.ouput"
-            },
-            {
-              "id": 108258,
-              "text": "java.io"
-            },
-            {
-              "id": 108259,
-              "text": "java.util"
-            },
-            {
-              "id": 108260,
-              "text": "java.lang"
-            },
-            {
-              "id": 108261,
-              "text": "java.input"
-            },
-            {
-              "id": 108262,
-              "text": "java.swing"
-            }
-          ],
-          "pick_answer_id": 108262
-        },
-        {
-          "id": 26127,
-          "text": "Trong Java, chỉ số của mảng bắt đầu là",
-          "marks": 1,
-          "answer_id": 108265,
-          "answers": [
-            {
-              "id": 108263,
-              "text": "2"
-            },
-            {
-              "id": 108264,
-              "text": "tùy ý"
-            },
-            {
-              "id": 108265,
-              "text": "0"
-            },
-            {
-              "id": 108266,
-              "text": "-1"
-            },
-            {
-              "id": 108267,
-              "text": "1"
-            }
-          ],
-          "pick_answer_id": 108265
-        },
-        {
-          "id": 26128,
-          "text": "Chọn câu trả lời đúng:Class abstract là",
-          "marks": 1,
-          "answer_id": 108270,
-          "answers": [
-            {
-              "id": 108268,
-              "text": "Class chứa các phương thức được khai báo là public"
-            },
-            {
-              "id": 108269,
-              "text": "Class chứa các phương thức được khai báo là private"
-            },
-            {
-              "id": 108270,
-              "text": "Class chứa ít nhất một phương thức được khai báo là abstract"
-            },
-            {
-              "id": 108271,
-              "text": "Class chứa các phương thức được khai báo là abtract"
-            },
-            {
-              "id": 108272,
-              "text": "Class chứa các phương thức được khai báo là final"
-            },
-            {
-              "id": 108273,
-              "text": "Class chứa các phương thức được khai báo là protected"
-            }
-          ],
-          "pick_answer_id": 108269
-        }
-      ],
-      "start": "2021-04-18T16:53:09.575Z",
-      "end": "2021-04-18T16:54:33.347Z",
-      "id": 4
-    },
-    {
-      "idUser": "2",
-      "idSubject": "adav",
-      "histo": [
-        {
-          "id": 25106,
-          "text": "Có mấy loại Service?",
-          "marks": 1,
-          "answer_id": 104121,
-          "answers": [
-            {
-              "id": 104118,
-              "text": "3"
-            },
-            {
-              "id": 104119,
-              "text": "4"
-            },
-            {
-              "id": 104120,
-              "text": "1"
-            },
-            {
-              "id": 104121,
-              "text": "2"
-            }
-          ],
-          "pick_answer_id": 104119
-        },
-        {
-          "id": 25107,
-          "text": "Trong IntentService, phương thức onHandlerIntent sẽ được tự động gọi trong phương thức nào?",
-          "marks": 1,
-          "answer_id": 104124,
-          "answers": [
-            {
-              "id": 104122,
-              "text": "onServiceConnected()"
-            },
-            {
-              "id": 104123,
-              "text": "onServiceDisConnected()"
-            },
-            {
-              "id": 104124,
-              "text": "onStartCommand()"
-            },
-            {
-              "id": 104125,
-              "text": "onBind()"
-            }
-          ],
-          "pick_answer_id": 104123
-        },
-        {
-          "id": 25108,
-          "text": "Khi nào phương thức ServiceConnection.onServiceConnected được gọi?",
-          "marks": 1,
-          "answer_id": 104126,
-          "answers": [
-            {
-              "id": 104126,
-              "text": "Sau khi một thành phần gọi Context.startService()"
-            },
-            {
-              "id": 104127,
-              "text": "Sau khi một thành phần gọi Context.bindService()"
-            },
-            {
-              "id": 104128,
-              "text": "Sau khi BroadcastReceiver nhận một Intent được gửi bởi Service"
-            },
-            {
-              "id": 104129,
-              "text": "Khi một Service gọi Context.startActivity()"
-            }
-          ],
-          "pick_answer_id": 104127
-        },
-        {
-          "id": 25109,
-          "text": "Phương thức Service.stopSelf(int startId) có tham số kiểu int. Tham số này dùng để làm gì?",
-          "marks": 1,
-          "answer_id": 104132,
-          "answers": [
-            {
-              "id": 104130,
-              "text": "Nếu startId khác 0, Service sẽ bị hủy một cách vô điều kiện"
-            },
-            {
-              "id": 104131,
-              "text": "Tham số miêu tả số miliseconds bị trì hoãn trước khi Service bị hủy"
-            },
-            {
-              "id": 104132,
-              "text": "Là start identifier gần nhất nhận được bởi lời gọi onStart(Intent, int)"
-            },
-            {
-              "id": 104133,
-              "text": "Được sử dụng để dừng Service nếu Service đang chạy trong process id với process id bằng giá trị startid"
-            }
-          ],
-          "pick_answer_id": 104131
-        }
-      ],
-      "start": "2021-04-19T06:42:28.270Z",
-      "end": "2021-04-19T06:44:56.914Z",
-      "id": 5
-    },
-    {
-      "idUser": "2",
-      "idSubject": "jaav",
-      "histo": [
-        {
-          "id": 26120,
-          "text": "Package nào chứa các class kiểu dữ liệu",
-          "marks": 1,
-          "answer_id": 108224,
-          "answers": [
-            {
-              "id": 108224,
-              "text": "java.lang"
-            },
-            {
-              "id": 108225,
-              "text": "java.io"
-            },
-            {
-              "id": 108226,
-              "text": "java.ouput"
-            },
-            {
-              "id": 108227,
-              "text": "java.swing"
-            },
-            {
-              "id": 108228,
-              "text": "java.util"
-            },
-            {
-              "id": 108229,
-              "text": "java.input"
-            }
-          ],
-          "pick_answer_id": 108224
-        },
-        {
-          "id": 26121,
-          "text": "Trong file MyCode.java chứa đoạn code sau: public class MyClass{}public interface MyInterface{}Mô tả nào đúng với đoạn code này trong file MyCode?",
-          "marks": 1,
-          "answer_id": 108230,
-          "answers": [
-            {
-              "id": 108230,
-              "text": "Đoạn code trên không có phương thức main()"
-            },
-            {
-              "id": 108231,
-              "text": "MyClass phải kế thừa từ MyInterface"
-            },
-            {
-              "id": 108232,
-              "text": "Không thể có một public class hoặc interface có cùng tên trong file code Java này."
-            },
-            {
-              "id": 108233,
-              "text": "MyClass phải thực thi MyInterface"
-            },
-            {
-              "id": 108234,
-              "text": "Phải có một public class hoặc interface có tên là MyCode"
-            },
-            {
-              "id": 108235,
-              "text": "Phải có nhiều public class hoặc interface có tên là MyCode"
-            }
-          ],
-          "pick_answer_id": 108230
-        }
-      ],
-      "start": "2021-04-19T06:45:36.899Z",
-      "end": "2021-04-19T06:45:56.730Z",
-      "id": 6
-    },
-    {
-      "idUser": "1",
-      "idSubject": "asne",
-      "histo": [
-        {
-          "id": 25970,
-          "text": "Lập trình viên thường gán giá trị mặc định cho các điều khiển trong phương thức xử lý sự kiện ........... của trang",
-          "marks": 1,
-          "answer_id": 107573,
-          "answers": [
-            {
-              "id": 107571,
-              "text": "Prerender"
-            },
-            {
-              "id": 107572,
-              "text": "Init"
-            },
-            {
-              "id": 107573,
-              "text": "Load"
-            },
-            {
-              "id": 107574,
-              "text": "Unload"
-            }
-          ],
-          "pick_answer_id": 107571
-        },
-        {
-          "id": 25971,
-          "text": "Bạn hãy cho biết định nghĩa nào sau đây là nói về ứng dụng web?",
-          "marks": 1,
-          "answer_id": 107575,
-          "answers": [
-            {
-              "id": 107575,
-              "text": "Là một ứng dụng client/server được truy cập thông qua trình duyệt Web trên mạng Internet hoặc intranet"
-            },
-            {
-              "id": 107576,
-              "text": "Các phương án đều đúng"
-            },
-            {
-              "id": 107577,
-              "text": "Là ứng dụng chỉ chạy trên một máy tính đơn"
-            },
-            {
-              "id": 107578,
-              "text": "Là ứng dụng chỉ chạy trên môi trường mobile"
-            }
-          ],
-          "pick_answer_id": 107577
-        },
-        {
-          "id": 25972,
-          "text": "Để hiển thị dòng \"Hello World\" trên trang web, trong ASP.Net cần dùng lệnh nào?",
-          "marks": 1,
-          "answer_id": 107582,
-          "answers": [
-            {
-              "id": 107579,
-              "text": "Document.Write(\"Hello World\");"
-            },
-            {
-              "id": 107580,
-              "text": "\"Hello World\""
-            },
-            {
-              "id": 107581,
-              "text": "Request.Write((\"Hello World\");"
-            },
-            {
-              "id": 107582,
-              "text": "Response.Write(\"Hello World\");"
-            }
-          ],
-          "pick_answer_id": 107580
-        },
-        {
-          "id": 25973,
-          "text": "Phát biểu nào sau đây đúng về ASP.NET?",
-          "marks": 1,
-          "answer_id": 107584,
-          "answers": [
-            {
-              "id": 107583,
-              "text": "ASP.NET là mô hình lập trình hướng cấu trúc"
-            },
-            {
-              "id": 107584,
-              "text": "ASP.NET là mô hình lập trình hướng sự kiện"
-            },
-            {
-              "id": 107585,
-              "text": "ASP.NET là mô hình lập trình hướng thành phần"
-            },
-            {
-              "id": 107586,
-              "text": "ASP.NET là mô hình lập trình hướng đối tượng"
-            }
-          ],
-          "pick_answer_id": 107585
-        }
-      ],
-      "start": "2021-04-19T07:45:24.873Z",
-      "end": "2021-04-19T07:45:39.802Z",
-      "id": 7
-    },
-    {
-      "idUser": "1",
-      "idSubject": "jaav",
-      "histo": [
-        {
-          "id": 26120,
-          "text": "Package nào chứa các class kiểu dữ liệu",
-          "marks": 1,
-          "answer_id": 108224,
-          "answers": [
-            {
-              "id": 108224,
-              "text": "java.lang"
-            },
-            {
-              "id": 108225,
-              "text": "java.io"
-            },
-            {
-              "id": 108226,
-              "text": "java.ouput"
-            },
-            {
-              "id": 108227,
-              "text": "java.swing"
-            },
-            {
-              "id": 108228,
-              "text": "java.util"
-            },
-            {
-              "id": 108229,
-              "text": "java.input"
-            }
-          ],
-          "pick_answer_id": 108224
-        },
-        {
-          "id": 26121,
-          "text": "Trong file MyCode.java chứa đoạn code sau: public class MyClass{}public interface MyInterface{}Mô tả nào đúng với đoạn code này trong file MyCode?",
-          "marks": 1,
-          "answer_id": 108230,
-          "answers": [
-            {
-              "id": 108230,
-              "text": "Đoạn code trên không có phương thức main()"
-            },
-            {
-              "id": 108231,
-              "text": "MyClass phải kế thừa từ MyInterface"
-            },
-            {
-              "id": 108232,
-              "text": "Không thể có một public class hoặc interface có cùng tên trong file code Java này."
-            },
-            {
-              "id": 108233,
-              "text": "MyClass phải thực thi MyInterface"
-            },
-            {
-              "id": 108234,
-              "text": "Phải có một public class hoặc interface có tên là MyCode"
-            },
-            {
-              "id": 108235,
-              "text": "Phải có nhiều public class hoặc interface có tên là MyCode"
-            }
-          ],
-          "pick_answer_id": 108230
-        },
-        {
-          "id": 26122,
-          "text": "Trong Java, 5/2 có kết quả là:",
-          "marks": 1,
-          "answer_id": 108240,
-          "answers": [
-            {
-              "id": 108236,
-              "text": "0"
-            },
-            {
-              "id": 108237,
-              "text": "Có lỗi"
-            },
-            {
-              "id": 108238,
-              "text": "3"
-            },
-            {
-              "id": 108239,
-              "text": "2.5"
-            },
-            {
-              "id": 108240,
-              "text": "2"
-            }
-          ],
-          "pick_answer_id": 108240
-        }
-      ],
-      "start": "2021-04-19T10:13:41.909Z",
-      "end": "2021-04-19T10:14:10.941Z",
-      "id": 8
-    },
-    {
-      "idUser": "1",
-      "idSubject": "asne",
-      "histo": [
-        {
-          "id": 25970,
-          "text": "Lập trình viên thường gán giá trị mặc định cho các điều khiển trong phương thức xử lý sự kiện ........... của trang",
-          "marks": 1,
-          "answer_id": 107573,
-          "answers": [
-            {
-              "id": 107571,
-              "text": "Prerender"
-            },
-            {
-              "id": 107572,
-              "text": "Init"
-            },
-            {
-              "id": 107573,
-              "text": "Load"
-            },
-            {
-              "id": 107574,
-              "text": "Unload"
-            }
-          ],
-          "pick_answer_id": 107573
-        }
-      ],
-      "start": "2021-04-19T10:15:57.993Z",
-      "end": "2021-04-19T10:16:00.809Z",
-      "id": 9
-    },
-    {
-      "idUser": "1",
-      "idSubject": "pmag",
-      "histo": [
-        {
-          "id": 24791,
-          "text": "Phẩm chất nào không nằm trong 7 phẩm chất quan trọng mà Product Owner cần có?",
-          "marks": 1,
-          "answer_id": 102847,
-          "answers": [
-            {
-              "id": 102847,
-              "text": "Có kỹ năng của một Tester"
-            },
-            {
-              "id": 102848,
-              "text": "Có tầm nhìn và kiến thức rõ ràng về sản phẩm"
-            },
-            {
-              "id": 102849,
-              "text": "Biết cách quản lý thành công kỳ vọng của các bên liên quan và đôi khi là mâu thuẫn về độ ưu tiên"
-            },
-            {
-              "id": 102850,
-              "text": "Biết cách thu thập yêu cầu để chuyển tầm nhìn sản phẩm thành một Product Backlog tốt"
-            }
-          ],
-          "pick_answer_id": 102850
-        },
-        {
-          "id": 24792,
-          "text": "Cách tiếp cận tầm nhìn sản phẩm sử dụng kỹ thuật gì?",
-          "marks": 1,
-          "answer_id": 102855,
-          "answers": [
-            {
-              "id": 102851,
-              "text": "5X"
-            },
-            {
-              "id": 102852,
-              "text": "5S"
-            },
-            {
-              "id": 102853,
-              "text": "5A"
-            },
-            {
-              "id": 102854,
-              "text": "5Y"
-            },
-            {
-              "id": 102855,
-              "text": "5W"
-            }
-          ],
-          "pick_answer_id": 102853
-        },
-        {
-          "id": 24793,
-          "text": "Phương án nào không phải lợi ích khi xác định mục tiêu của Sprint?",
-          "marks": 1,
-          "answer_id": 102856,
-          "answers": [
-            {
-              "id": 102856,
-              "text": "Hỗ trợ giao tiếp giữa các phòng ban trong công ty"
-            },
-            {
-              "id": 102857,
-              "text": "Nhận thông tin phản hồi"
-            },
-            {
-              "id": 102858,
-              "text": "Tạo sự tập trung và hỗ trợ nhóm tốt hơn từ khách hàng"
-            },
-            {
-              "id": 102859,
-              "text": "Thuận tiện khi phân tích phản hồi"
-            }
-          ],
-          "pick_answer_id": 102858
-        }
-      ],
-      "start": "2021-04-19T10:16:53.679Z",
-      "end": "2021-04-19T10:17:36.119Z",
-      "id": 10
     }
   ],
   "vbpr": [

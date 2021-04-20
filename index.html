@@ -144,7 +144,10 @@
                 templateUrl : './hoi-dap.html',
                 controller : 'faq'
             })
-            .when('/gop-y', {templateUrl : './gop-y.html'})
+            .when('/gop-y', {
+                templateUrl : './gop-y.html',
+                controller : 'agr'
+            })
             .when('/dang-ky', {
                 templateUrl : './dang-ky.html',
                 controller: 'sgUp'
@@ -154,7 +157,10 @@
                 controller: 'lgCtrl'
             })
             .when('/quen-mat-khau', {templateUrl : './quen-mat-khau.html'})
-            .when('/doi-mat-khau', {templateUrl : './doi-mat-khau.html'})
+            .when('/doi-mat-khau', {
+                templateUrl : './doi-mat-khau.html',
+                controller : 'repas'
+            })
             .when('/sua-tai-khoan', {templateUrl : './sua-tai-khoan.html'})
             .when('/trac-nghiem/:idMonHoc', {
                 templateUrl :  './trac-nghiem.html',
@@ -268,20 +274,72 @@
             );
         });
     </script>
-
     <script>
-        app.controller('faq', function ($scope) {
-            $scope.noiDung = '';
-            $scope.btnSendMail = function () {
-                var url = 
-                        'https://mail.google.com/mail/u/0/?view=cm&to=vinhlmpc01238@fpt.edu.vn' +
-                        '&su=' + encodeURI('Hỏi đáp | Online Traing') +
-                        '&body=' + encodeURI($scope.noiDung);
-                window.open(url, '_blank', 'height=400,width=500');
-            };
+        app.controller('repas', function ($scope, $http) {
+            document.cookie.split('; ').forEach(item => {
+                if (item.startsWith('Username')){
+                    $scope.usernameRp = (item.substring(item.indexOf('=') + 1));
+                }
+            });
+            $scope.newpass1Rp = '';
+            $scope.newpass2Rp = '';
+            $scope.passRp = '';
+            $scope.messRp = '';
+
+            $scope.updatePs = function () {
+                $scope.messRp = '';
+                if ($scope.newpass1Rp.trim().length == 0){
+                    $scope.messRp = 'Vui lòng nhập vào mật khẩu mới';
+                    return;
+                }
+
+                if ($scope.newpass1Rp != $scope.newpass2Rp){
+                    $scope.messRp = 'Mật khẩu mới không khớp';
+                    return;
+                }
+
+                var user = $scope.usernameRp;
+                var pass = $scope.passRp;
+
+                $http.get('http://localhost:3000/user?username='+user+'&password='+pass)
+                .then(
+                    response => {
+                        console.log(response.data)
+                        var dataResponse = response.data;
+
+                        if(dataResponse.length == 0){
+                            $scope.messRp = 'Sai tài khoản hoặc mật khẩu';
+                            return;
+                        }
+
+                        var userObj = response.data[0];
+                        userObj.password = $scope.newpass1Rp;
+
+                        $http.put('http://localhost:3000/user/'+userObj.id, userObj)
+                        .then(
+                            response => {
+                                document.cookie = 'LoginId=null;expires=' + new Date(0) + ';path=/';
+                                document.cookie = 'User=null;expires=' + new Date(0) + ';path=/';
+                                document.cookie = 'Pass=null;expires=' + new Date(0) + ';path=/';
+                                document.cookie = 'Username=null;expires=' + new Date(0) + ';path=/';
+                                window.location = "/#!dang-nhap";
+                            },
+                            error => {
+                                console.log(error);
+                                alert('Không thể kết nối đến cơ sỡ dữ liệu');
+                            }
+                        );
+                    },
+                    error => {
+                        alert('Không thể kết nối đến cơ sỡ dữ liệu');
+                    }
+                );
+            }
         });
     </script>
 
+    <script src="./js/module/hoi-dap.js"></script>
+    <script src="./js/module/gop-y.js"></script>
     <script src="./js/module/trac-nghiem.js"></script>
     <script src="./js/module/dang-nhap.js"></script>
     <script src="./js/module/dang-ky.js"></script>

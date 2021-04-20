@@ -1,34 +1,35 @@
 <form action="" method="post">
     <div class="card">
-        <div class="card-header">
-            <b>ĐỔI MẬT KHẨU</b>
+        <div class="card-header text-primary">
+            <b class="bi bi-arrow-left-right"> ĐỔI MẬT KHẨU</b>
         </div>
         <div class="card-body">
-           <div class="row">
-               <div class="col">
-                <div class="form-group">
-                    <label for="">Tên tài khoản:</label>
-                    <input type="text" class="form-control" name="username" id="username" aria-describedby="usernameHid">
+            <div class="row">
+                <div ng-show="messRp" class="col-12 px-3"><b class="d-block alert alert-danger">{{messRp}}</b></div>
+                <div class="col">
+                    <div class="form-group">
+                        <label>Tên tài khoản:</label>
+                        <input tabindex="1" type="text" class="form-control" name="username" id="username" ng-model="usernameRp" name="username" readonly>
+                    </div>
+                    <div class="form-group">
+                        <label>Mật khẩu mới:</label>
+                        <input tabindex="3" type="password" class="form-control" name="newpass1" ng-model="newpass1Rp">
+                    </div>
                 </div>
-                <div class="form-group">
-                    <label for="">Mật khẩu mới:</label>
-                    <input type="password" class="form-control" name="password" id="password">
+                <div class="col">
+                    <div class="form-group">
+                        <label>Mật khẩu hiện tại:</label>
+                        <input tabindex="2" type="password" class="form-control" name="passRp" ng-model="passRp">
+                    </div>
+                    <div class="form-group">
+                        <label>Nhập lại mật khẩu:</label>
+                        <input tabindex="4" type="password" class="form-control" name="newpass2" ng-model="newpass2Rp">
+                    </div>
                 </div>
-               </div>
-               <div class="col">
-                <div class="form-group">
-                    <label for="">Mật khẩu hiện tại:</label>
-                    <input type="password" class="form-control" name="currentPassword" id="currentPassword">
-                </div>
-                <div class="form-group">
-                    <label for="">Nhập lại mật khẩu:</label>
-                    <input type="password" class="form-control" name="confirmPassword" id="confirmPassword">
-                </div>
-               </div>
-           </div>
+            </div>
         </div>
         <div class="card-footer text-muted">
-            <button class="btn btn-success">Thay đổi</button>
+            <button tabindex="5" ng-click="updatePs()" type="button" class="btn btn-success">Thay đổi</button>
         </div>
     </div>
 </form>
