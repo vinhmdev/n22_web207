@@ -1,31 +1,49 @@
 <form action="" method="post">
     <div class="card">
-        <div class="card-header">
-            <b>CẬP NHẬT TÀI KHOẢN</b>
+        <div class="card-header text-primary">
+            <b class="bi bi-file-person-fill"> CẬP NHẬT TÀI KHOẢN</b>
         </div>
-        <div class="card-body">
-           <div class="row">
-               <div class="col">
-                <div class="form-group">
-                    <label for="">Tên tài khoản:</label>
-                    <input type="text" class="form-control" name="username" id="username" aria-describedby="usernameHid">
+        <div class="card-body pt-0">
+            <div class="row">
+                <div class="form-group col-12 col-md-6">
+                    <label class="text-uppercase mt-2">Tên tài khoản:</label>
+                    <input type="text" class="form-control">
                 </div>
-                <div class="form-group">
-                    <label for="">Họ và tên:</label>
-                    <input type="text" class="form-control" name="fullname" id="fullname" aria-describedby="fullnameHid">
+                <div class="form-group col-12 col-md-6">
+                    <label class="text-uppercase mt-2">Mật khẩu hiện tại:</label>
+                    <input type="text" class="form-control">
                 </div>
-               </div>
-               <div class="col">
-                <div class="form-group">
-                    <label for="">Mật khẩu:</label>
-                    <input type="password" class="form-control" name="password" id="password">
+            </div>
+            <div class="row">
+                <div class="form-group col-12 col-md-6">
+                    <label class="text-uppercase mt-2">Họ và tên:</label>
+                    <input type="text" class="form-control">
                 </div>
-                <div class="form-group">
-                    <label for="">Email:</label>
-                    <input type="text" class="form-control" name="email" id="email" aria-describedby="emailHid">
+                <div class="form-group col-12 col-md-6">
+                    <label class="text-uppercase mt-2">Email:</label>
+                    <input type="text" class="form-control">
                 </div>
-               </div>
-           </div>
+            </div>
+            <div class="row">
+                <div class="form-group col-12 col-md-6">
+                    <label class="text-uppercase mt-2">Số điện thoại:</label>
+                    <input type="text" class="form-control">
+                </div>
+                <div class="form-group col-12 col-md-6">
+                    <label class="text-uppercase mt-2">Giới tính:</label>
+                    <div class="border p-2 pt-1 rounded-2">
+                        <label class="d-inline-block me-3">
+                          <input ng-model="account.gender" value="true" name="gender" type="radio" class="form-check float-start me-2" required>
+                          <span>Nam</span>
+                        </label>
+                        <label class="d-inline-block">
+                          <input ng-model="account.gender" value="false" name="gender" type="radio" class="form-check float-start me-2" required>
+                          <span>Nữ</span>
+                        </label>
+                      </div>
+                </div>
+            </div>
+
         </div>
         <div class="card-footer text-muted">
             <button class="btn btn-success">Cập nhật</button>
