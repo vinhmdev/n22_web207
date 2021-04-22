@@ -9,7 +9,7 @@
     <script src="./js/bootstrap.js"></script>
     <style>
         .bg-main {
-            background: #fca0a0;
+            background: #77f;
             background-image: url('./img/bg-log.jpg');
         }
         .bg-hover:hover {
@@ -100,10 +100,12 @@
              <!--  -->
             <aside class="col-12 col-md-3">
                 <div class="card card-header p-0 bg-light">
-                    <b class=" bi bi-book m-2 text-primary" role="button" data-bs-target="#ls1" data-bs-toggle="collapse">
+                    <b class="w-100 bi bi-book m-2 text-primary" role="button" data-bs-target="#ls1" data-bs-toggle="collapse">
                         DANH MỤC <b class="bi bi-caret-down-fill"></b>
                     </b>
-                    <div class="list-group collapse show" id="ls1">
+                </div>
+                <div class="card-body position-relative h-100" style="min-height: 10rem;">
+                    <div class="list-group collapse show overflow-auto position-absolute top-0 start-0 end-0" id="ls1" style="bottom: 2.6rem;">
                         <a ng-repeat="item in asideA" href="#!trac-nghiem/{{item.id}}" class="list-group-item bg-hover">
                             <img class="img img-thumbnail float-start my-0 me-3" style="height: 3em;" src="./img/logos/{{item.logo}}"> {{item.name}}
                         </a>

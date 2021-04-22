@@ -13,7 +13,7 @@ app.controller('histo', function ($scope, $http) {
             $scope.isLogin = (item.substring(item.indexOf('=') + 1));
         }
     });
-    $http.get('http://localhost:3000/histo?idUser=' + $scope.isLogin + '&_sort=id&_order=desc')
+    $http.get('http://localhost:3000/histo?idUser=' + $scope.isLogin + '&_sort=start&_order=desc')
     .then(
         response => {
             response.data.forEach(item => {

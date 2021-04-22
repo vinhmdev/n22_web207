@@ -35863,6 +35863,292 @@
       "start": "2021-04-20T16:03:03.205Z",
       "end": "2021-04-20T16:03:05.803Z",
       "id": 1
+    },
+    {
+      "idUser": "1",
+      "idSubject": "adte",
+      "histo": [
+        {
+          "id": 25262,
+          "text": "Kiểm thử nào không nằm trong kiểm thử hệ thống?",
+          "marks": 1,
+          "answer_id": 104715,
+          "answers": [
+            {
+              "id": 104712,
+              "text": "Installation tests"
+            },
+            {
+              "id": 104713,
+              "text": "Performance tests"
+            },
+            {
+              "id": 104714,
+              "text": "GUI tests"
+            },
+            {
+              "id": 104715,
+              "text": "Unit test"
+            }
+          ],
+          "pick_answer_id": 104713
+        },
+        {
+          "id": 25263,
+          "text": "Kiểm thử nào được sử dụng để kiểm thử hoạt động của các thành phần khi chúng làm việc chung với nhau?",
+          "marks": 1,
+          "answer_id": 104717,
+          "answers": [
+            {
+              "id": 104716,
+              "text": "Kiểm thử đơn vị"
+            },
+            {
+              "id": 104717,
+              "text": "Kiểm thử tích hợp"
+            },
+            {
+              "id": 104718,
+              "text": "Kiểm thử chấp nhận"
+            },
+            {
+              "id": 104719,
+              "text": "Kiểm thử giao diện"
+            }
+          ],
+          "pick_answer_id": 104717
+        },
+        {
+          "id": 25264,
+          "text": "Android sử dụng Framework nào để kiểm thử đơn vị?",
+          "marks": 1,
+          "answer_id": 104720,
+          "answers": [
+            {
+              "id": 104720,
+              "text": "JUnit"
+            },
+            {
+              "id": 104721,
+              "text": "FUnit"
+            },
+            {
+              "id": 104722,
+              "text": "NUnit"
+            },
+            {
+              "id": 104723,
+              "text": "AUnit"
+            }
+          ],
+          "pick_answer_id": 104722
+        },
+        {
+          "id": 25265,
+          "text": "Trong JUnit, phương thức nào được sử dụng để kiểm tra một giá trị có phải Null hay không?",
+          "marks": 1,
+          "answer_id": 104727,
+          "answers": [
+            {
+              "id": 104724,
+              "text": "confirmNull"
+            },
+            {
+              "id": 104725,
+              "text": "assertNulls"
+            },
+            {
+              "id": 104726,
+              "text": "confirmNulls"
+            },
+            {
+              "id": 104727,
+              "text": "assertNull"
+            }
+          ],
+          "pick_answer_id": 104725
+        }
+      ],
+      "start": "2021-04-22T06:43:41.444Z",
+      "end": "2021-04-22T06:44:14.354Z",
+      "id": 2
+    },
+    {
+      "idUser": "1",
+      "idSubject": "adav",
+      "histo": [
+        {
+          "id": 25106,
+          "text": "Có mấy loại Service?",
+          "marks": 1,
+          "answer_id": 104121,
+          "answers": [
+            {
+              "id": 104118,
+              "text": "3"
+            },
+            {
+              "id": 104119,
+              "text": "4"
+            },
+            {
+              "id": 104120,
+              "text": "1"
+            },
+            {
+              "id": 104121,
+              "text": "2"
+            }
+          ],
+          "pick_answer_id": 104118
+        }
+      ],
+      "start": "2021-04-22T06:45:14.351Z",
+      "end": "2021-04-22T06:45:16.991Z",
+      "id": 3
+    },
+    {
+      "idUser": "1",
+      "idSubject": "adte",
+      "histo": [
+        {
+          "id": 25262,
+          "text": "Kiểm thử nào không nằm trong kiểm thử hệ thống?",
+          "marks": 1,
+          "answer_id": 104715,
+          "answers": [
+            {
+              "id": 104712,
+              "text": "Installation tests"
+            },
+            {
+              "id": 104713,
+              "text": "Performance tests"
+            },
+            {
+              "id": 104714,
+              "text": "GUI tests"
+            },
+            {
+              "id": 104715,
+              "text": "Unit test"
+            }
+          ],
+          "pick_answer_id": 104713
+        },
+        {
+          "id": 25263,
+          "text": "Kiểm thử nào được sử dụng để kiểm thử hoạt động của các thành phần khi chúng làm việc chung với nhau?",
+          "marks": 1,
+          "answer_id": 104717,
+          "answers": [
+            {
+              "id": 104716,
+              "text": "Kiểm thử đơn vị"
+            },
+            {
+              "id": 104717,
+              "text": "Kiểm thử tích hợp"
+            },
+            {
+              "id": 104718,
+              "text": "Kiểm thử chấp nhận"
+            },
+            {
+              "id": 104719,
+              "text": "Kiểm thử giao diện"
+            }
+          ],
+          "pick_answer_id": 104719
+        },
+        {
+          "id": 25264,
+          "text": "Android sử dụng Framework nào để kiểm thử đơn vị?",
+          "marks": 1,
+          "answer_id": 104720,
+          "answers": [
+            {
+              "id": 104720,
+              "text": "JUnit"
+            },
+            {
+              "id": 104721,
+              "text": "FUnit"
+            },
+            {
+              "id": 104722,
+              "text": "NUnit"
+            },
+            {
+              "id": 104723,
+              "text": "AUnit"
+            }
+          ],
+          "pick_answer_id": 104723
+        }
+      ],
+      "start": "2021-04-22T06:45:30.444Z",
+      "end": "2021-04-22T06:45:41.161Z",
+      "id": 4
+    },
+    {
+      "idUser": "1",
+      "idSubject": "dbbs",
+      "histo": [
+        {
+          "id": 24916,
+          "text": "Phát biểu nào dưới đây là đúng về quản lý dữ liệu?",
+          "marks": 1,
+          "answer_id": 103344,
+          "answers": [
+            {
+              "id": 103343,
+              "text": "Thực hiện thao tác dữ liệu và truy vấn dữ liệu"
+            },
+            {
+              "id": 103344,
+              "text": "Quản lý lưu trữ dữ liệu, thao tác dữ liệu và truy vấn dữ liệu"
+            },
+            {
+              "id": 103345,
+              "text": "Quản lý lưu trữ dữ liệu, thêm, sửa, xóa dữ liệu"
+            },
+            {
+              "id": 103346,
+              "text": "Cho phép lưu trữ dữ liệu và truy vấn dữ liệu"
+            }
+          ],
+          "pick_answer_id": 103345
+        },
+        {
+          "id": 24917,
+          "text": "Hệ quản trị cơ sở dữ liệu không mang lại các lợi ích nào sau đây?",
+          "marks": 1,
+          "answer_id": 103349,
+          "answers": [
+            {
+              "id": 103347,
+              "text": "Hỗ trợ các ngôn ngữ giao tiếp"
+            },
+            {
+              "id": 103348,
+              "text": "Quản trị các cơ sở dữ liệu"
+            },
+            {
+              "id": 103349,
+              "text": "Cung cấp các truy cập đến tổ chức dữ liệu vật lý"
+            },
+            {
+              "id": 103350,
+              "text": "Có cơ chế an toàn, bảo mật cao"
+            }
+          ],
+          "pick_answer_id": 103349
+        }
+      ],
+      "start": "2021-04-22T06:50:27.612Z",
+      "end": "2021-04-22T06:50:31.373Z",
+      "id": 5
     }
   ],
   "vbpr": [
