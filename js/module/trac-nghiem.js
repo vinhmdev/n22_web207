@@ -1,17 +1,25 @@
-app.controller('trng', function ($scope, $routeParams, $http) {
+app.controller('trng', function ($scope, $routeParams, $http, $interval) {
     var startTest = new Date(); //
 
     var isNotLogin = true;
+
     document.cookie.split('; ').filter(item => {
         if (item.startsWith('LoginId')){
             $scope.isLogin = (item.substring(item.indexOf('=') + 1));
             isNotLogin = false;
         }
     });
+
     if (isNotLogin) {
         alert('Vui lòng đăng nhập để sử dụng dịch vụ');
         window.location = '/#!dang-nhap'
     }
+
+    $scope.dongHo = 0;
+    $interval(() => {
+        $scope.dongHo++;
+    }, 1000);
+
 
     $scope.title = 'Error'
     var idMonHoc = $routeParams.idMonHoc;
@@ -28,6 +36,7 @@ app.controller('trng', function ($scope, $routeParams, $http) {
             alert('Không thể kết nối đến cơ sỡ dữ liệu');
         }
     );
+
     $http.get('http://localhost:3000/'+idMonHoc+'?_sort=id&_order=asc')
     .then (
         response => {
@@ -65,6 +74,7 @@ app.controller('trng', function ($scope, $routeParams, $http) {
     $scope.pickShow = [];
 
     $scope.pick = function (answerId) {
+
         $scope.ched = true;
         var pickResult = angular.copy($scope.quest);
         pickResult.pick_answer_id = answerId;
@@ -90,8 +100,6 @@ app.controller('trng', function ($scope, $routeParams, $http) {
 
             $scope.pickShow[i].stt = i;
         }
-
-        console.log($scope.pickShow)
     };
 
     $scope.finishTest = function () {
@@ -116,4 +124,5 @@ app.controller('trng', function ($scope, $routeParams, $http) {
             }
         );
     };
+
 });

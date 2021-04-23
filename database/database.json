@@ -36149,6 +36149,260 @@
       "start": "2021-04-22T06:50:27.612Z",
       "end": "2021-04-22T06:50:31.373Z",
       "id": 5
+    },
+    {
+      "idUser": "1",
+      "idSubject": "jaav",
+      "histo": [
+        {
+          "id": 26120,
+          "text": "Package nào chứa các class kiểu dữ liệu",
+          "marks": 1,
+          "answer_id": 108224,
+          "answers": [
+            {
+              "id": 108224,
+              "text": "java.lang"
+            },
+            {
+              "id": 108225,
+              "text": "java.io"
+            },
+            {
+              "id": 108226,
+              "text": "java.ouput"
+            },
+            {
+              "id": 108227,
+              "text": "java.swing"
+            },
+            {
+              "id": 108228,
+              "text": "java.util"
+            },
+            {
+              "id": 108229,
+              "text": "java.input"
+            }
+          ],
+          "pick_answer_id": 108224
+        },
+        {
+          "id": 26121,
+          "text": "Trong file MyCode.java chứa đoạn code sau: public class MyClass{}public interface MyInterface{}Mô tả nào đúng với đoạn code này trong file MyCode?",
+          "marks": 1,
+          "answer_id": 108230,
+          "answers": [
+            {
+              "id": 108230,
+              "text": "Đoạn code trên không có phương thức main()"
+            },
+            {
+              "id": 108231,
+              "text": "MyClass phải kế thừa từ MyInterface"
+            },
+            {
+              "id": 108232,
+              "text": "Không thể có một public class hoặc interface có cùng tên trong file code Java này."
+            },
+            {
+              "id": 108233,
+              "text": "MyClass phải thực thi MyInterface"
+            },
+            {
+              "id": 108234,
+              "text": "Phải có một public class hoặc interface có tên là MyCode"
+            },
+            {
+              "id": 108235,
+              "text": "Phải có nhiều public class hoặc interface có tên là MyCode"
+            }
+          ],
+          "pick_answer_id": 108230
+        },
+        {
+          "id": 26122,
+          "text": "Trong Java, 5/2 có kết quả là:",
+          "marks": 1,
+          "answer_id": 108240,
+          "answers": [
+            {
+              "id": 108236,
+              "text": "0"
+            },
+            {
+              "id": 108237,
+              "text": "Có lỗi"
+            },
+            {
+              "id": 108238,
+              "text": "3"
+            },
+            {
+              "id": 108239,
+              "text": "2.5"
+            },
+            {
+              "id": 108240,
+              "text": "2"
+            }
+          ],
+          "pick_answer_id": 108240
+        },
+        {
+          "id": 26123,
+          "text": "Trong một package, đối với một thành phần (member) khi không khai báo từ khóa private, public, protected thì quyền truy cập đối với thành phần đó là",
+          "marks": 1,
+          "answer_id": 108244,
+          "answers": [
+            {
+              "id": 108241,
+              "text": "Có thể truy cập bởi các class bên ngoài package."
+            },
+            {
+              "id": 108242,
+              "text": "Chỉ có thể truy cập trong cùng một class."
+            },
+            {
+              "id": 108243,
+              "text": "Có thể truy cập bởi các class kế thừa từ class này."
+            },
+            {
+              "id": 108244,
+              "text": "Có thể truy cập bởi các class trong cùng một package."
+            },
+            {
+              "id": 108245,
+              "text": "Có thể truy cập bởi các class là super của class này."
+            }
+          ],
+          "pick_answer_id": 108244
+        },
+        {
+          "id": 26124,
+          "text": "Chọn câu trả lời đúng:interface chứa các method là",
+          "marks": 1,
+          "answer_id": 108248,
+          "answers": [
+            {
+              "id": 108246,
+              "text": "Các method là final"
+            },
+            {
+              "id": 108247,
+              "text": "Các method protected"
+            },
+            {
+              "id": 108248,
+              "text": "Tất cả các method abstract"
+            },
+            {
+              "id": 108249,
+              "text": "Các method là public"
+            },
+            {
+              "id": 108250,
+              "text": "Các method là private"
+            },
+            {
+              "id": 108251,
+              "text": "Một số method là abstract"
+            }
+          ],
+          "pick_answer_id": 108248
+        },
+        {
+          "id": 26125,
+          "text": "Đoạn code này có lỗi không?import java.util.*;package myPackage;class MyClass extends MyInterface {} interface MyInterface {}",
+          "marks": 1,
+          "answer_id": 108256,
+          "answers": [
+            {
+              "id": 108252,
+              "text": "Interface MyInterface có thể kế thừa"
+            },
+            {
+              "id": 108253,
+              "text": "Không có lỗi"
+            },
+            {
+              "id": 108254,
+              "text": "Dòng import.java.util.* sai cú pháp"
+            },
+            {
+              "id": 108255,
+              "text": "class MyClass phải được khai báo là public"
+            },
+            {
+              "id": 108256,
+              "text": "Interface MyInterface không thể kế thừa"
+            }
+          ],
+          "pick_answer_id": 108256
+        }
+      ],
+      "start": "2021-04-23T06:29:54.198Z",
+      "end": "2021-04-23T06:30:45.862Z",
+      "id": 6
+    },
+    {
+      "idUser": "1",
+      "idSubject": "adbs",
+      "histo": [
+        {
+          "id": 25026,
+          "text": "Điều khiển được sử dụng để hiển thị nội dụng trang web trong ứng dụng Android?",
+          "marks": 1,
+          "answer_id": 103784,
+          "answers": [
+            {
+              "id": 103783,
+              "text": "Button"
+            },
+            {
+              "id": 103784,
+              "text": "WebView"
+            },
+            {
+              "id": 103785,
+              "text": "Spinner"
+            },
+            {
+              "id": 103786,
+              "text": "EditText"
+            }
+          ],
+          "pick_answer_id": 103786
+        },
+        {
+          "id": 25027,
+          "text": "Đối với URLConnection, sử dụng phương thức nào để thiết lập timeout cho connection?",
+          "marks": 1,
+          "answer_id": 103790,
+          "answers": [
+            {
+              "id": 103787,
+              "text": "setURLTimeout()"
+            },
+            {
+              "id": 103788,
+              "text": "setInternetTimeout()"
+            },
+            {
+              "id": 103789,
+              "text": "setTimeout()"
+            },
+            {
+              "id": 103790,
+              "text": "setConnectTimeout()"
+            }
+          ],
+          "pick_answer_id": 103789
+        }
+      ],
+      "start": "2021-04-23T07:59:22.883Z",
+      "end": "2021-04-23T07:59:54.738Z",
+      "id": 7
     }
   ],
   "vbpr": [
