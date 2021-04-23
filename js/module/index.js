@@ -25,7 +25,10 @@ app.config($routeProvider => {
         templateUrl : './doi-mat-khau.html',
         controller : 'repas'
     })
-    .when('/sua-tai-khoan', {templateUrl : './sua-tai-khoan.html'})
+    .when('/sua-tai-khoan', {
+        templateUrl : './sua-tai-khoan.html',
+        controller : 'profile'
+    })
     .when('/trac-nghiem/:idMonHoc', {
         templateUrl :  './trac-nghiem.html',
         controller : 'trng'
