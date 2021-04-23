@@ -2,6 +2,7 @@ app.controller('profile', function ($scope, $http) {
     document.cookie.split('; ').forEach(item => {
         if (item.startsWith('Username')){
             $scope.usernameRp = (item.substring(item.indexOf('=') + 1));
+            
         }
     });
   
@@ -31,19 +32,6 @@ app.controller('profile', function ($scope, $http) {
                 userObj.password = $scope.newpass1Rp;
 
                 $http.put('http://localhost:3000/user/'+userObj.id, userObj)
-                .then(
-                    response => {
-                        document.cookie = 'LoginId=null;expires=' + new Date(0) + ';path=/';
-                        document.cookie = 'User=null;expires=' + new Date(0) + ';path=/';
-                        document.cookie = 'Pass=null;expires=' + new Date(0) + ';path=/';
-                        document.cookie = 'Username=null;expires=' + new Date(0) + ';path=/';
-                        window.location = "/#!dang-nhap";
-                    },
-                    error => {
-                        console.log(error);
-                        alert('Không thể kết nối đến cơ sỡ dữ liệu');
-                    }
-                );
             },
             error => {
                 alert('Không thể kết nối đến cơ sỡ dữ liệu');
