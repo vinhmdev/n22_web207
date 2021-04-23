@@ -3,7 +3,6 @@
     {
       "id": 1,
       "username": "vinhlm",
-      "password": "vi",
       "fullname": "Lê Minh Vinh",
       "email": "vinhlmpc01238@fpt.edu.vn",
       "gender": true,
@@ -32,6 +31,17 @@
       "birthday": "2001-01-10",
       "schoolfee": 2000000,
       "marks": 0
+    },
+    {
+      "username": "vinhlmx",
+      "password": "vi",
+      "email": "22@22.22",
+      "fullname": "Lê X",
+      "birthday": "2000/11/21",
+      "gender": false,
+      "schoolfee": 0,
+      "marks": 0,
+      "id": 4
     }
   ],
   "subjects": [

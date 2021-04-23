@@ -8,14 +8,34 @@ app.controller('profile', function ($scope, $http) {
   
     $scope.messRp = '';
 
-    $scope.update = function () {
-      
 
+    $http.get('http://localhost:3000/user?username='+$scope.usernameRp)
+        .then(
+            response => {
+                console.log(response.data)
+                var dataResponse = response.data;
+
+                var userObj = dataResponse[0];
+                $scope.passRp = userObj.password;
+                $scope.fnameRp = userObj.fullname;
+                $scope.emailRp = userObj.email;
+                $scope.birthday = new Date(userObj.birthday);
+                $scope.gender = userObj.gender;
+            },
+            error => {
+                alert('Không thể kết nối đến cơ sỡ dữ liệu');
+            }
+        );
+
+
+    $scope.update = function () {
         var user = $scope.usernameRp;
         var pass = $scope.passRp;
+
         var fname = $scope.fnameRp;
         var email = $scope.emailRp;
-        var phone = $scope.phoneRp;
+        var birthday = $scope.birthday;
+        var gender = $scope.gender;
 
         $http.get('http://localhost:3000/user?username='+user+'&password='+pass)
         .then(
@@ -29,9 +49,20 @@ app.controller('profile', function ($scope, $http) {
                 }
 
                 var userObj = response.data[0];
-                userObj.password = $scope.newpass1Rp;
+                userObj.fullname = fname;
+                userObj.email = email;
+                userObj.birthday = birthday.toLocaleDateString('ja-JP'); // định dạng ngày nhật bản (yyyy/MM/dd)
+                userObj.gender = (gender == 'true') ? true : false;
 
                 $http.put('http://localhost:3000/user/'+userObj.id, userObj)
+                .then (
+                    response => {
+                        window.location = window.location;
+                    },
+                    error => {
+                        alert('Không thể kết nối đến cơ sỡ dữ liệu');
+                    }
+                )
             },
             error => {
                 alert('Không thể kết nối đến cơ sỡ dữ liệu');

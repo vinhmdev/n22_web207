@@ -4,7 +4,7 @@
             <b class="bi bi-file-person-fill"> CẬP NHẬT TÀI KHOẢN</b>
         </div>
         <div class="card-body pt-0">
-            <div ng-show="messRp" class="col-12 px-3"><b class="d-block alert alert-danger">{{messRp}}</b></div>
+            <div ng-show="messRp" class="col-12 px-3 mt-3"><b class="d-block alert alert-danger">{{messRp}}</b></div>
             <div class="row">
                 <div class="form-group col-12 col-md-6">
                     <label class="text-uppercase mt-2">Tên tài khoản:</label>
@@ -12,7 +12,7 @@
                 </div>
                 <div class="form-group col-12 col-md-6">
                     <label class="text-uppercase mt-2">Mật khẩu hiện tại:</label>
-                    <input type="text" class="form-control" ng-model="passRp" readonly>
+                    <input type="password" class="form-control" ng-model="passRp" readonly>
                 </div>
             </div>
             <div class="row">
@@ -27,18 +27,18 @@
             </div>
             <div class="row">
                 <div class="form-group col-12 col-md-6">
-                    <label class="text-uppercase mt-2">Số điện thoại:</label>
-                    <input type="text" class="form-control" ng-model="phoneRp">
+                    <label class="text-uppercase mt-2">Ngày Sinh:</label>
+                    <input type="date" class="form-control" ng-model="birthday">
                 </div>
                 <div class="form-group col-12 col-md-6">
                     <label class="text-uppercase mt-2">Giới tính:</label>
                     <div class="border p-2 pt-1 rounded-2">
                         <label class="d-inline-block me-3">
-                          <input ng-model="account.gender" value="true" name="gender" type="radio" class="form-check float-start me-2" required>
+                          <input ng-model="gender" value="true" name="gender" type="radio" class="form-check float-start me-2" required ng-checked="gender == true">
                           <span>Nam</span>
                         </label>
                         <label class="d-inline-block">
-                          <input ng-model="account.gender" value="false" name="gender" type="radio" class="form-check float-start me-2" required>
+                          <input ng-model="gender" value="false" name="gender" type="radio" class="form-check float-start me-2" required ng-checked="gender == false">
                           <span>Nữ</span>
                         </label>
                       </div>
@@ -47,7 +47,7 @@
 
         </div>
         <div class="card-footer text-muted">
-            <button class="btn btn-success" ng-click="update()">Cập nhật</button>
+            <button class="btn btn-success" ng-click="update()" type="button">Cập nhật</button>
         </div>
     </div>
 </form>
