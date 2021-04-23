@@ -4,30 +4,31 @@
             <b class="bi bi-file-person-fill"> CẬP NHẬT TÀI KHOẢN</b>
         </div>
         <div class="card-body pt-0">
+            <div ng-show="messRp" class="col-12 px-3"><b class="d-block alert alert-danger">{{messRp}}</b></div>
             <div class="row">
                 <div class="form-group col-12 col-md-6">
                     <label class="text-uppercase mt-2">Tên tài khoản:</label>
-                    <input type="text" class="form-control">
+                    <input type="text" class="form-control" ng-model="usernameRp">
                 </div>
                 <div class="form-group col-12 col-md-6">
                     <label class="text-uppercase mt-2">Mật khẩu hiện tại:</label>
-                    <input type="text" class="form-control">
+                    <input type="text" class="form-control" ng-model="passRp">
                 </div>
             </div>
             <div class="row">
                 <div class="form-group col-12 col-md-6">
                     <label class="text-uppercase mt-2">Họ và tên:</label>
-                    <input type="text" class="form-control">
+                    <input type="text" class="form-control" ng-model="fnameRp">
                 </div>
                 <div class="form-group col-12 col-md-6">
                     <label class="text-uppercase mt-2">Email:</label>
-                    <input type="text" class="form-control">
+                    <input type="text" class="form-control" ng-model="emailRp">
                 </div>
             </div>
             <div class="row">
                 <div class="form-group col-12 col-md-6">
                     <label class="text-uppercase mt-2">Số điện thoại:</label>
-                    <input type="text" class="form-control">
+                    <input type="text" class="form-control" ng-model="phoneRp">
                 </div>
                 <div class="form-group col-12 col-md-6">
                     <label class="text-uppercase mt-2">Giới tính:</label>
@@ -46,7 +47,7 @@
 
         </div>
         <div class="card-footer text-muted">
-            <button class="btn btn-success">Cập nhật</button>
+            <button class="btn btn-success" ng-click="update()">Cập nhật</button>
         </div>
     </div>
 </form>
