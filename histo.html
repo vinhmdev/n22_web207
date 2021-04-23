@@ -10,7 +10,7 @@
                 <li class="list-group-item"><b>Môn học:</b> {{infes[page].nameSubject}}</li>
                 <li class="list-group-item"><b>Ngày kiểm tra:</b> {{infes[page].start | date : 'dd/MM/yyyy HH:mm:ss'}}</li>
                 <li class="list-group-item"><b>Câu hỏi đã trả lời:</b> {{histoShow[page].length}}</li>
-                <li class="list-group-item"><b>Thời gian:</b> {{infes[page].detalTime | number : '3'}} giây</li>
+                <li class="list-group-item"><b>Thời gian:</b> {{(infes[page].detalTime / 60) | number : '2'}} phút</li>
             </ul>
         </div>
         <table class="table table-bordered table-hover w-100">
