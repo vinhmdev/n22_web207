@@ -51,14 +51,9 @@ app.controller('profile', function ($scope, $http) {
                 var userObj = response.data[0];
                 userObj.fullname = fname;
                 userObj.email = email;
-<<<<<<< Updated upstream
                 userObj.birthday = birthday.toLocaleDateString('ja-JP'); // định dạng ngày nhật bản (yyyy/MM/dd)
                 userObj.gender = (gender == 'true') ? true : false;
 
-=======
-                userObj.phone = phone;
-                userObj.gender = gender;
->>>>>>> Stashed changes
                 $http.put('http://localhost:3000/user/'+userObj.id, userObj)
                 .then (
                     response => {
